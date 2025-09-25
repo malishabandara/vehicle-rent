@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, type ReactNode } from "react";
 import VehicleCard, { type Vehicle } from "@/components/VehicleCard";
 import { Button } from "@/components/ui/button";
 import { Car, Bus, Truck, Van, ShieldCheck, Clock4, Map, Mail, PhoneCall } from "lucide-react";
@@ -15,64 +15,67 @@ export default function Index() {
     if (v) setSelectedVehicle(v);
   }, []);
 
-  const vehicles: Vehicle[] = useMemo(() => [
-    {
-      title: "Sedan Car",
-      image:
-        "https://images.unsplash.com/photo-1549921296-3a6b3c2bba94?q=80&w=1600&auto=format&fit=crop",
-      specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
-      tags: ["Airport", "City Ride"],
-    },
-    {
-      title: "Luxury Car",
-      image:
-        "https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1600&auto=format&fit=crop",
-      specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
-      tags: ["Business", "Premium"],
-    },
-    {
-      title: "Passenger Van",
-      image:
-        "https://images.unsplash.com/photo-1608138273951-95d0c7b4f2bc?q=80&w=1600&auto=format&fit=crop",
-      specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
-      tags: ["Group", "Tours"],
-    },
-    {
-      title: "Mini Bus",
-      image:
+  const vehicles: Vehicle[] = useMemo(
+    () => [
+      {
+        title: "Sedan Car",
+        image:
+          "https://images.unsplash.com/photo-1549921296-3a6b3c2bba94?q=80&w=1600&auto=format&fit=crop",
+        specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
+        tags: ["Airport", "City Ride"],
+      },
+      {
+        title: "Luxury Car",
+        image:
+          "https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1600&auto=format&fit=crop",
+        specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
+        tags: ["Business", "Premium"],
+      },
+      {
+        title: "Passenger Van",
+        image:
+          "https://images.unsplash.com/photo-1608138273951-95d0c7b4f2bc?q=80&w=1600&auto=format&fit=crop",
+        specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
+        tags: ["Group", "Tours"],
+      },
+      {
+        title: "Mini Bus",
+        image:
         "https://images.unsplash.com/photo-1600240644455-a0c124c0b4d6?q=80&w=1600&auto=format&fit=crop",
-      specs: { seats: "20-30 Passengers", ac: true, transmission: "Manual" },
-      tags: ["Events", "Corporate"],
-    },
-    {
-      title: "Tour Coach",
-      image:
-        "https://images.unsplash.com/photo-1521523896730-07aa75a5fa8b?q=80&w=1600&auto=format&fit=crop",
-      specs: { seats: "40+ Passengers", ac: true, transmission: "Manual" },
-      tags: ["Long Trips", "Comfort"],
-    },
-    {
-      title: "Box Lorry",
-      image:
-        "https://images.unsplash.com/photo-1542326237-94b1c5a538d8?q=80&w=1600&auto=format&fit=crop",
-      specs: { seats: "Crew 2", ac: false, transmission: "Manual", luggage: "Moves" },
-      tags: ["Cargo", "Moves"],
-    },
-    {
-      title: "Flatbed Truck",
-      image:
-        "https://images.unsplash.com/photo-1621905251430-30c1d79c0b3b?q=80&w=1600&auto=format&fit=crop",
-      specs: { seats: "Crew 2", ac: false, transmission: "Manual" },
-      tags: ["Logistics"],
-    },
-    {
-      title: "Double Cab",
-      image:
-        "https://images.unsplash.com/photo-1541447271487-09612fda5f8c?q=80&w=1600&auto=format&fit=crop",
-      specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
-      tags: ["Adventure"],
-    },
-  ], []);
+        specs: { seats: "20-30 Passengers", ac: true, transmission: "Manual" },
+        tags: ["Events", "Corporate"],
+      },
+      {
+        title: "Tour Coach",
+        image:
+          "https://images.unsplash.com/photo-1521523896730-07aa75a5fa8b?q=80&w=1600&auto=format&fit=crop",
+        specs: { seats: "40+ Passengers", ac: true, transmission: "Manual" },
+        tags: ["Long Trips", "Comfort"],
+      },
+      {
+        title: "Box Lorry",
+        image:
+          "https://images.unsplash.com/photo-1542326237-94b1c5a538d8?q=80&w=1600&auto=format&fit=crop",
+        specs: { seats: "Crew 2", ac: false, transmission: "Manual", luggage: "Moves" },
+        tags: ["Cargo", "Moves"],
+      },
+      {
+        title: "Flatbed Truck",
+        image:
+          "https://images.unsplash.com/photo-1621905251430-30c1d79c0b3b?q=80&w=1600&auto=format&fit=crop",
+        specs: { seats: "Crew 2", ac: false, transmission: "Manual" },
+        tags: ["Logistics"],
+      },
+      {
+        title: "Double Cab",
+        image:
+          "https://images.unsplash.com/photo-1541447271487-09612fda5f8c?q=80&w=1600&auto=format&fit=crop",
+        specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
+        tags: ["Adventure"],
+      },
+    ],
+    [],
+  );
 
   async function submitContact(form: ContactRequest) {
     setStatus("sending");
@@ -116,8 +119,12 @@ export default function Index() {
               wherever you go in Sri Lanka.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <a href="#fleet"><Button size="lg" className="btn-gradient text-primary-foreground">Browse Fleet</Button></a>
-              <a href="#contact"><Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"><PhoneCall className="mr-2 h-4 w-4"/>Get a Quote</Button></a>
+              <a href="#fleet">
+                <Button size="lg" className="btn-gradient text-primary-foreground">Browse Fleet</Button>
+              </a>
+              <a href="#contact">
+                <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"><PhoneCall className="mr-2 h-4 w-4"/>Get a Quote</Button>
+              </a>
             </div>
             <div className="mt-8 grid grid-cols-3 gap-6 text-sm">
               <div className="flex items-center gap-2"><ShieldCheck className="h-5 w-5 text-primary"/> Insured</div>
@@ -156,10 +163,10 @@ export default function Index() {
       {/* Services */}
       <section className="section border-y bg-gradient-to-b from-background to-secondary/40" id="services">
         <div className="container-tight grid gap-8 md:grid-cols-4">
-          <Feature icon={<Car className=\"h-6 w-6 text-primary\"/>} title="Airport Transfers" desc="On-time pickups and drop-offs to CMB and domestic airports." />
-          <Feature icon={<Van className=\"h-6 w-6 text-primary\"/>} title="Group Tours" desc="Comfortable vans and buses for families and teams." />
-          <Feature icon={<Bus className=\"h-6 w-6 text-primary\"/>} title="Corporate Travel" desc="Executive vehicles with professional chauffeurs." />
-          <Feature icon={<Truck className=\"h-6 w-6 text-primary\"/>} title="Logistics & Moves" desc="Box lorries and trucks for safe cargo transport." />
+          <Feature icon={<Car className="h-6 w-6 text-primary" />} title="Airport Transfers" desc="On-time pickups and drop-offs to CMB and domestic airports." />
+          <Feature icon={<Van className="h-6 w-6 text-primary" />} title="Group Tours" desc="Comfortable vans and buses for families and teams." />
+          <Feature icon={<Bus className="h-6 w-6 text-primary" />} title="Corporate Travel" desc="Executive vehicles with professional chauffeurs." />
+          <Feature icon={<Truck className="h-6 w-6 text-primary" />} title="Logistics & Moves" desc="Box lorries and trucks for safe cargo transport." />
         </div>
       </section>
 
@@ -219,7 +226,7 @@ export default function Index() {
   );
 }
 
-function Feature({ icon, title, desc }: { icon: React.ReactNode; title: string; desc: string }) {
+function Feature({ icon, title, desc }: { icon: ReactNode; title: string; desc: string }) {
   return (
     <div className="rounded-xl border bg-card p-6 shadow-sm">
       <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-md bg-primary/15 text-primary">{icon}</div>
@@ -355,7 +362,7 @@ function ContactForm({ selectedVehicle, onSubmit, status, error }: {
   );
 }
 
-function Field({ label, required, children }: { label: string; required?: boolean; children: React.ReactNode }) {
+function Field({ label, required, children }: { label: string; required?: boolean; children: ReactNode }) {
   return (
     <label className="block text-sm">
       <span className="mb-1 block text-muted-foreground">{label}{required ? " *" : ""}</span>
