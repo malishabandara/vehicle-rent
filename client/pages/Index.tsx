@@ -168,13 +168,6 @@ export default function Index() {
           <Feature icon={<Bus className="h-6 w-6 text-primary" />} title="Corporate Travel" desc="Executive vehicles with professional chauffeurs." />
           <Feature icon={<Truck className="h-6 w-6 text-primary" />} title="Logistics & Moves" desc="Box lorries and trucks for safe cargo transport." />
         </div>
-        <div className="mt-8">
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fc33d63569d50437288d0110eda969d88?format=webp&width=800"
-            alt="Ride booking illustration"
-            className="w-full rounded-xl border shadow-sm"
-          />
-        </div>
       </section>
 
       {/* About */}
