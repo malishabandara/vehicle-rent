@@ -353,7 +353,7 @@ function ContactForm({ selectedVehicle, onSubmit, status, error }: {
       </div>
       {error && <p className="mt-3 text-sm text-red-400">{error}</p>}
       <div className="mt-6 flex flex-wrap gap-3">
-        <Button disabled={disabled} className="btn-gradient text-primary-foreground">
+        <Button type="submit" disabled={disabled} className="btn-gradient text-primary-foreground">
           {status === "sending" ? "Sending..." : status === "ok" ? "Sent ✓" : "Send Message"}
         </Button>
         <a href="#home" className="inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm">Back to top</a>
