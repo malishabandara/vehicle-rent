@@ -10,3 +10,20 @@
 export interface DemoResponse {
   message: string;
 }
+
+export interface ContactRequest {
+  name: string;
+  email: string;
+  phone?: string;
+  vehicleType?: string;
+  pickupLocation?: string;
+  dropoffLocation?: string;
+  startDate?: string;
+  endDate?: string;
+  message?: string;
+}
+
+export interface ContactResponse {
+  ok: true;
+  receivedAt: string;
+}
