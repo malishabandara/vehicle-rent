@@ -164,7 +164,7 @@ export default function Index() {
       <section className="section border-y bg-gradient-to-b from-background to-secondary/40" id="services">
         <div className="container-tight grid gap-8 md:grid-cols-4">
           <Feature icon={<Car className="h-6 w-6 text-primary" />} title="Airport Transfers" desc="On-time pickups and drop-offs to CMB and domestic airports." />
-          <Feature icon={<Van className="h-6 w-6 text-primary" />} title="Group Tours" desc="Comfortable vans and buses for families and teams." />
+          <Feature icon={<Car className="h-6 w-6 text-primary" />} title="Group Tours" desc="Comfortable vans and buses for families and teams." />
           <Feature icon={<Bus className="h-6 w-6 text-primary" />} title="Corporate Travel" desc="Executive vehicles with professional chauffeurs." />
           <Feature icon={<Truck className="h-6 w-6 text-primary" />} title="Logistics & Moves" desc="Box lorries and trucks for safe cargo transport." />
         </div>
