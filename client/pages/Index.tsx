@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import VehicleCard, { type Vehicle } from "@/components/VehicleCard";
 import { Button } from "@/components/ui/button";
-import { Car, Bus, Truck, Van, ShieldCheck, Clock4, Map, Mail, PhoneCall } from "lucide-react";
+import { Car, Bus, Truck, ShieldCheck, Clock4, Map, Mail, PhoneCall } from "lucide-react";
 import type { ContactRequest, ContactResponse } from "@shared/api";
 
 export default function Index() {
