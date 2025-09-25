@@ -20,56 +20,56 @@ export default function Index() {
       {
         title: "Sedan Car",
         image:
-          "https://images.unsplash.com/photo-1549921296-3a6b3c2bba94?q=80&w=1600&auto=format&fit=crop",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fab759887ccd440d68814445782e31958?format=webp&width=800",
         specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Airport", "City Ride"],
       },
       {
         title: "Luxury Car",
         image:
-          "https://images.unsplash.com/photo-1563720223185-11003d516935?q=80&w=1600&auto=format&fit=crop",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800",
         specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Business", "Premium"],
       },
       {
         title: "Passenger Van",
         image:
-          "https://images.unsplash.com/photo-1608138273951-95d0c7b4f2bc?q=80&w=1600&auto=format&fit=crop",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fc33d63569d50437288d0110eda969d88?format=webp&width=800",
         specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
         tags: ["Group", "Tours"],
       },
       {
         title: "Mini Bus",
         image:
-        "https://images.unsplash.com/photo-1600240644455-a0c124c0b4d6?q=80&w=1600&auto=format&fit=crop",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800",
         specs: { seats: "20-30 Passengers", ac: true, transmission: "Manual" },
         tags: ["Events", "Corporate"],
       },
       {
         title: "Tour Coach",
         image:
-          "https://images.unsplash.com/photo-1521523896730-07aa75a5fa8b?q=80&w=1600&auto=format&fit=crop",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fab759887ccd440d68814445782e31958?format=webp&width=800",
         specs: { seats: "40+ Passengers", ac: true, transmission: "Manual" },
         tags: ["Long Trips", "Comfort"],
       },
       {
         title: "Box Lorry",
         image:
-          "https://images.unsplash.com/photo-1542326237-94b1c5a538d8?q=80&w=1600&auto=format&fit=crop",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800",
         specs: { seats: "Crew 2", ac: false, transmission: "Manual", luggage: "Moves" },
         tags: ["Cargo", "Moves"],
       },
       {
         title: "Flatbed Truck",
         image:
-          "https://images.unsplash.com/photo-1621905251430-30c1d79c0b3b?q=80&w=1600&auto=format&fit=crop",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800",
         specs: { seats: "Crew 2", ac: false, transmission: "Manual" },
         tags: ["Logistics"],
       },
       {
         title: "Double Cab",
         image:
-          "https://images.unsplash.com/photo-1541447271487-09612fda5f8c?q=80&w=1600&auto=format&fit=crop",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800",
         specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
         tags: ["Adventure"],
       },
