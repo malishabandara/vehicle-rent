@@ -39,7 +39,7 @@ export default function VehicleCard({ v, onQuote }: { v: Vehicle; onQuote: (vehi
             <div className="flex items-center gap-1.5"><Users className="h-4 w-4 text-primary"/> {v.specs.seats}</div>
           )}
           {v.specs.transmission && (
-            <div className="flex items-center gap-1.5"><GaugeCircle className="h-4 w-4 text-primary"/> {v.specs.transmission}</div>
+            <div className="flex items-center gap-1.5"><Gauge className="h-4 w-4 text-primary"/> {v.specs.transmission}</div>
           )}
           {v.specs.luggage && (
             <div className="flex items-center gap-1.5"><CheckCircle2 className="h-4 w-4 text-primary"/> {v.specs.luggage}</div>
