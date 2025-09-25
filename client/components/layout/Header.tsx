@@ -15,19 +15,29 @@ export default function Header() {
   const NavLinks = () => (
     <ul className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8 text-sm">
       <li>
-        <a href="#home" className="hover:text-primary transition-colors">Home</a>
+        <a href="#home" className="hover:text-primary transition-colors">
+          Home
+        </a>
       </li>
       <li>
-        <a href="#fleet" className="hover:text-primary transition-colors">Fleet</a>
+        <a href="#fleet" className="hover:text-primary transition-colors">
+          Fleet
+        </a>
       </li>
       <li>
-        <a href="#services" className="hover:text-primary transition-colors">Services</a>
+        <a href="#services" className="hover:text-primary transition-colors">
+          Services
+        </a>
       </li>
       <li>
-        <a href="#about" className="hover:text-primary transition-colors">About</a>
+        <a href="#about" className="hover:text-primary transition-colors">
+          About
+        </a>
       </li>
       <li>
-        <a href="#contact" className="hover:text-primary transition-colors">Contact</a>
+        <a href="#contact" className="hover:text-primary transition-colors">
+          Contact
+        </a>
       </li>
     </ul>
   );
@@ -37,7 +47,11 @@ export default function Header() {
       <div className="container-tight flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
           <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-primary text-primary-foreground shadow overflow-hidden">
-            <img src="https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800" alt="CNS Travels" className="h-6 w-6 object-contain" />
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800"
+              alt="CNS Travels"
+              className="h-6 w-6 object-contain"
+            />
           </span>
           <div className="font-extrabold tracking-tight leading-none">
             <span className="text-lg">CNS</span>
