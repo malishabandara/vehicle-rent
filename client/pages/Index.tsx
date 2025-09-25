@@ -101,7 +101,7 @@ export default function Index() {
       <section className="relative section pt-24" id="home">
         <div className="absolute inset-0 -z-10">
           <img
-            src="https://images.unsplash.com/photo-1537744864611-b3d560090d48?q=80&w=1920&auto=format&fit=crop"
+            src="https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fab759887ccd440d68814445782e31958?format=webp&width=800"
             alt="Driver in car"
             className="h-full w-full object-cover"
           />
