@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Users, GaugeCircle, Fuel, CheckCircle2 } from "lucide-react";
+import { Users, Gauge, Fuel, CheckCircle2 } from "lucide-react";
 
 export type Vehicle = {
   title: string;
