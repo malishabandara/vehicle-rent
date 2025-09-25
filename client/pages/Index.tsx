@@ -134,8 +134,8 @@ export default function Index() {
           </div>
           <div className="relative">
             <div className="grid grid-cols-2 gap-4">
-              <img className="rounded-xl shadow-lg" src="https://images.unsplash.com/photo-1549921296-3a6b3c2bba94?q=80&w=800&auto=format&fit=crop" alt="Sedan" />
-              <img className="rounded-xl shadow-lg" src="https://images.unsplash.com/photo-1608138273951-95d0c7b4f2bc?q=80&w=800&auto=format&fit=crop" alt="Van" />
+              <img className="rounded-xl shadow-lg" src="https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fc33d63569d50437288d0110eda969d88?format=webp&width=800" alt="Ride booking illustration" />
+              <img className="rounded-xl shadow-lg" src="https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800" alt="Car rental handover" />
               <img className="rounded-xl shadow-lg" src="https://images.unsplash.com/photo-1600240644455-a0c124c0b4d6?q=80&w=800&auto=format&fit=crop" alt="Mini bus" />
               <img className="rounded-xl shadow-lg" src="https://images.unsplash.com/photo-1542326237-94b1c5a538d8?q=80&w=800&auto=format&fit=crop" alt="Lorry" />
             </div>
