@@ -512,20 +512,9 @@ function WhatsAppForm({
   );
 }
 
-function ContactForm({
-  selectedVehicle,
-  onSubmit,
-  status,
-  error,
-}: {
-  selectedVehicle: string;
-  onSubmit: (form: ContactRequest) => Promise<void>;
-  status: "idle" | "sending" | "ok" | "error";
-  error: string;
-}) {
-  const [form, setForm] = useState<ContactRequest>({
+function ContactForm({ selectedVehicle }: { selectedVehicle: string }) {
+  const [form, setForm] = useState<WAForm>({
     name: "",
-    email: "",
     phone: "",
     vehicleType: selectedVehicle || "",
     pickupLocation: "",
@@ -540,13 +529,24 @@ function ContactForm({
       setForm((f) => ({ ...f, vehicleType: selectedVehicle }));
   }, [selectedVehicle]);
 
-  const disabled = status === "sending";
-
   return (
     <form
       onSubmit={(e) => {
         e.preventDefault();
-        onSubmit(form);
+        const phoneNumber = "94718885557";
+        const lines = [
+          "Hello CNS Travels,",
+          `Name: ${form.name || ""}`,
+          `Phone: ${form.phone || ""}`,
+          `Vehicle: ${form.vehicleType || ""}`,
+          `Pickup: ${form.pickupLocation || ""}`,
+          `Drop-off: ${form.dropoffLocation || ""}`,
+          `Dates: ${form.startDate || ""} to ${form.endDate || ""}`,
+          form.message ? `Message: ${form.message}` : "",
+        ].filter(Boolean);
+        const text = lines.join("\n");
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+        window.open(url, "_blank");
       }}
       className="rounded-xl border bg-card p-6 shadow-sm"
     >
@@ -556,15 +556,6 @@ function ContactForm({
             required
             value={form.name}
             onChange={(e) => setForm({ ...form, name: e.target.value })}
-            className="h-11 w-full rounded-md border bg-background px-3 outline-none ring-offset-background focus:ring-2 focus:ring-primary"
-          />
-        </Field>
-        <Field label="Email" required>
-          <input
-            type="email"
-            required
-            value={form.email}
-            onChange={(e) => setForm({ ...form, email: e.target.value })}
             className="h-11 w-full rounded-md border bg-background px-3 outline-none ring-offset-background focus:ring-2 focus:ring-primary"
           />
         </Field>
@@ -637,19 +628,8 @@ function ContactForm({
           </Field>
         </div>
       </div>
-      {error && <p className="mt-3 text-sm text-red-400">{error}</p>}
       <div className="mt-6 flex flex-wrap gap-3">
-        <Button
-          type="submit"
-          disabled={disabled}
-          className="btn-gradient text-primary-foreground"
-        >
-          {status === "sending"
-            ? "Sending..."
-            : status === "ok"
-              ? "Sent ✓"
-              : "Send Message"}
-        </Button>
+        <Button type="submit" className="btn-gradient text-primary-foreground">Send Message</Button>
         <a
           href="#home"
           className="inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm"
