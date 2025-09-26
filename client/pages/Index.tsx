@@ -35,6 +35,7 @@ export default function Index() {
         title: "Sedan Car",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fab759887ccd440d68814445782e31958?format=webp&width=800",
+        category: "car",
         specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Airport", "City Ride"],
       },
@@ -42,6 +43,7 @@ export default function Index() {
         title: "Luxury Car",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800",
+        category: "car",
         specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Business", "Premium"],
       },
@@ -49,6 +51,7 @@ export default function Index() {
         title: "Passenger Van",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fc33d63569d50437288d0110eda969d88?format=webp&width=800",
+        category: "van",
         specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
         tags: ["Group", "Tours"],
       },
@@ -56,6 +59,7 @@ export default function Index() {
         title: "Mini Bus",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800",
+        category: "bus",
         specs: { seats: "20-30 Passengers", ac: true, transmission: "Manual" },
         tags: ["Events", "Corporate"],
       },
@@ -63,6 +67,7 @@ export default function Index() {
         title: "Tour Coach",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fab759887ccd440d68814445782e31958?format=webp&width=800",
+        category: "bus",
         specs: { seats: "40+ Passengers", ac: true, transmission: "Manual" },
         tags: ["Long Trips", "Comfort"],
       },
@@ -70,6 +75,7 @@ export default function Index() {
         title: "Box Lorry",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800",
+        category: "lorry",
         specs: {
           seats: "Crew 2",
           ac: false,
@@ -82,6 +88,7 @@ export default function Index() {
         title: "Flatbed Truck",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800",
+        category: "lorry",
         specs: { seats: "Crew 2", ac: false, transmission: "Manual" },
         tags: ["Logistics"],
       },
@@ -89,6 +96,7 @@ export default function Index() {
         title: "Double Cab",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800",
+        category: "car",
         specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
         tags: ["Adventure"],
       },
