@@ -1,7 +1,13 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import VehicleCard, { type Vehicle } from "@/components/VehicleCard";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription,
+} from "@/components/ui/dialog";
 import {
   Car,
   Bus,
@@ -21,7 +27,9 @@ export default function Index() {
   );
   const [error, setError] = useState<string>("");
   const [waOpen, setWaOpen] = useState(false);
-  const [category, setCategory] = useState<"car" | "van" | "bus" | "lorry">("car");
+  const [category, setCategory] = useState<"car" | "van" | "bus" | "lorry">(
+    "car",
+  );
 
   useEffect(() => {
     const usp = new URLSearchParams(window.location.search);
@@ -218,12 +226,14 @@ export default function Index() {
             </div>
           </div>
           <div className="mb-6 flex flex-wrap gap-3">
-            {([
-              { key: "car", label: "Cars" },
-              { key: "van", label: "Vans" },
-              { key: "bus", label: "Buses" },
-              { key: "lorry", label: "Lorries" },
-            ] as const).map((c) => (
+            {(
+              [
+                { key: "car", label: "Cars" },
+                { key: "van", label: "Vans" },
+                { key: "bus", label: "Buses" },
+                { key: "lorry", label: "Lorries" },
+              ] as const
+            ).map((c) => (
               <button
                 key={c.key}
                 onClick={() => setCategory(c.key)}
@@ -366,7 +376,8 @@ export default function Index() {
           <DialogHeader>
             <DialogTitle>WhatsApp Inquiry</DialogTitle>
             <DialogDescription>
-              Send us your trip details on WhatsApp. We usually reply within minutes.
+              Send us your trip details on WhatsApp. We usually reply within
+              minutes.
             </DialogDescription>
           </DialogHeader>
           <WhatsAppForm
@@ -493,14 +504,18 @@ function WhatsAppForm({
         <Field label="Pickup Location">
           <input
             value={form.pickupLocation}
-            onChange={(e) => setForm({ ...form, pickupLocation: e.target.value })}
+            onChange={(e) =>
+              setForm({ ...form, pickupLocation: e.target.value })
+            }
             className="h-11 w-full rounded-md border bg-background px-3 outline-none ring-offset-background focus:ring-2 focus:ring-primary"
           />
         </Field>
         <Field label="Drop-off Location">
           <input
             value={form.dropoffLocation}
-            onChange={(e) => setForm({ ...form, dropoffLocation: e.target.value })}
+            onChange={(e) =>
+              setForm({ ...form, dropoffLocation: e.target.value })
+            }
             className="h-11 w-full rounded-md border bg-background px-3 outline-none ring-offset-background focus:ring-2 focus:ring-primary"
           />
         </Field>
@@ -657,7 +672,9 @@ function ContactForm({ selectedVehicle }: { selectedVehicle: string }) {
         </div>
       </div>
       <div className="mt-6 flex flex-wrap gap-3">
-        <Button type="submit" className="btn-gradient text-primary-foreground">Send Message</Button>
+        <Button type="submit" className="btn-gradient text-primary-foreground">
+          Send Message
+        </Button>
         <a
           href="#home"
           className="inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm"

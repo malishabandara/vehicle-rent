@@ -85,7 +85,9 @@ export default function VehicleCard({
             Get Quote
           </a>
           <button
-            onClick={() => (onWhatsApp ? onWhatsApp(v.title) : onQuote(v.title))}
+            onClick={() =>
+              onWhatsApp ? onWhatsApp(v.title) : onQuote(v.title)
+            }
             className="inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm"
             type="button"
           >
