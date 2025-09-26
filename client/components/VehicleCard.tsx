@@ -4,6 +4,7 @@ import { Users, Gauge, Fuel, CheckCircle2 } from "lucide-react";
 export type Vehicle = {
   title: string;
   image: string;
+  category?: "car" | "van" | "bus" | "lorry";
   specs: {
     seats?: string;
     luggage?: string;
