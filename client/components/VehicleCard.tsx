@@ -16,9 +16,11 @@ export type Vehicle = {
 export default function VehicleCard({
   v,
   onQuote,
+  onWhatsApp,
 }: {
   v: Vehicle;
   onQuote: (vehicle: string) => void;
+  onWhatsApp?: (vehicle: string) => void;
 }) {
   return (
     <div className="group overflow-hidden rounded-xl border bg-card text-card-foreground shadow-sm transition hover:shadow-lg">
@@ -80,13 +82,13 @@ export default function VehicleCard({
           >
             Get Quote
           </button>
-          <a
-            href="#contact"
-            onClick={() => onQuote(v.title)}
+          <button
+            onClick={() => (onWhatsApp ? onWhatsApp(v.title) : onQuote(v.title))}
             className="inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm"
+            type="button"
           >
             WhatsApp
-          </a>
+          </button>
         </div>
       </div>
     </div>
