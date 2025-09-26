@@ -214,6 +214,10 @@ export default function Index() {
                 key={v.title}
                 v={v}
                 onQuote={(title) => setSelectedVehicle(title)}
+                onWhatsApp={(title) => {
+                  setSelectedVehicle(title);
+                  setWaOpen(true);
+                }}
               />
             ))}
           </div>
