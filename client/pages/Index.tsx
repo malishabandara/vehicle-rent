@@ -20,6 +20,7 @@ export default function Index() {
     "idle",
   );
   const [error, setError] = useState<string>("");
+  const [waOpen, setWaOpen] = useState(false);
 
   useEffect(() => {
     const usp = new URLSearchParams(window.location.search);
