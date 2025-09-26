@@ -302,12 +302,7 @@ export default function Index() {
           </p>
           <div className="mt-10 grid gap-8 md:grid-cols-3">
             <div className="md:col-span-2">
-              <ContactForm
-                selectedVehicle={selectedVehicle}
-                onSubmit={submitContact}
-                status={status}
-                error={error}
-              />
+              <ContactForm selectedVehicle={selectedVehicle} />
             </div>
             <aside className="space-y-4 rounded-xl border bg-card p-6">
               <h3 className="font-semibold">Contact Details</h3>
