@@ -76,12 +76,13 @@ export default function VehicleCard({
           )}
         </div>
         <div className="mt-4 flex gap-3">
-          <button
+          <a
+            href="tel:+94718885557"
             onClick={() => onQuote(v.title)}
             className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
           >
             Get Quote
-          </button>
+          </a>
           <button
             onClick={() => (onWhatsApp ? onWhatsApp(v.title) : onQuote(v.title))}
             className="inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm"
