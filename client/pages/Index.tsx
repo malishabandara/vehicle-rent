@@ -58,7 +58,7 @@ export default function Index() {
       {
         title: "Dolphin Van",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fc33d63569d50437288d0110eda969d88?format=webp&width=800",
+          "./dolphin van.png",
         category: "van",
         specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
         tags: ["Group", "Tours"],
