@@ -145,7 +145,7 @@ export default function Index() {
                   Browse Fleet
                 </Button>
               </a>
-              <a href="#contact">
+              <a href="tel:+94718885557">
                 <Button
                   size="lg"
                   variant="outline"
