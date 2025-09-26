@@ -63,7 +63,7 @@ export default function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-3">
-          <a href="#contact">
+          <a href="tel:+94718885557">
             <Button className="btn-gradient text-primary-foreground shadow-md">
               <Phone className="mr-2 h-4 w-4" /> Get a Quote
             </Button>
