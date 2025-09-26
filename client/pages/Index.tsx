@@ -332,6 +332,37 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      <Dialog open={waOpen} onOpenChange={setWaOpen}>
+        <DialogContent>
+          <DialogHeader>
+            <DialogTitle>WhatsApp Inquiry</DialogTitle>
+            <DialogDescription>
+              Send us your trip details on WhatsApp. We usually reply within minutes.
+            </DialogDescription>
+          </DialogHeader>
+          <WhatsAppForm
+            selectedVehicle={selectedVehicle}
+            onSubmit={(f) => {
+              const phoneNumber = "94718885557";
+              const lines = [
+                "Hello CNS Travels,",
+                `Name: ${f.name || ""}`,
+                `Phone: ${f.phone || ""}`,
+                `Vehicle: ${f.vehicleType || ""}`,
+                `Pickup: ${f.pickupLocation || ""}`,
+                `Drop-off: ${f.dropoffLocation || ""}`,
+                `Dates: ${f.startDate || ""} to ${f.endDate || ""}`,
+                f.message ? `Message: ${f.message}` : "",
+              ].filter(Boolean);
+              const text = lines.join("\n");
+              const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
+              window.open(url, "_blank");
+              setWaOpen(false);
+            }}
+          />
+        </DialogContent>
+      </Dialog>
     </div>
   );
 }
@@ -353,6 +384,131 @@ function Feature({
       <h3 className="font-semibold">{title}</h3>
       <p className="mt-1 text-sm text-muted-foreground">{desc}</p>
     </div>
+  );
+}
+
+type WAForm = {
+  name: string;
+  phone?: string;
+  vehicleType?: string;
+  pickupLocation?: string;
+  dropoffLocation?: string;
+  startDate?: string;
+  endDate?: string;
+  message?: string;
+};
+
+function WhatsAppForm({
+  selectedVehicle,
+  onSubmit,
+}: {
+  selectedVehicle: string;
+  onSubmit: (form: WAForm) => void;
+}) {
+  const [form, setForm] = useState<WAForm>({
+    name: "",
+    phone: "",
+    vehicleType: selectedVehicle || "",
+    pickupLocation: "",
+    dropoffLocation: "",
+    startDate: "",
+    endDate: "",
+    message: "",
+  });
+
+  useEffect(() => {
+    if (selectedVehicle)
+      setForm((f) => ({ ...f, vehicleType: selectedVehicle }));
+  }, [selectedVehicle]);
+
+  return (
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+        onSubmit(form);
+      }}
+      className="space-y-4"
+    >
+      <div className="grid gap-4 sm:grid-cols-2">
+        <Field label="Your Name" required>
+          <input
+            required
+            value={form.name}
+            onChange={(e) => setForm({ ...form, name: e.target.value })}
+            className="h-11 w-full rounded-md border bg-background px-3 outline-none ring-offset-background focus:ring-2 focus:ring-primary"
+          />
+        </Field>
+        <Field label="Phone">
+          <input
+            value={form.phone}
+            onChange={(e) => setForm({ ...form, phone: e.target.value })}
+            className="h-11 w-full rounded-md border bg-background px-3 outline-none ring-offset-background focus:ring-2 focus:ring-primary"
+          />
+        </Field>
+        <Field label="Vehicle Type">
+          <select
+            value={form.vehicleType}
+            onChange={(e) => setForm({ ...form, vehicleType: e.target.value })}
+            className="h-11 w-full rounded-md border bg-background px-3 outline-none ring-offset-background focus:ring-2 focus:ring-primary"
+          >
+            <option value="">Select vehicle</option>
+            <option>Sedan Car</option>
+            <option>Luxury Car</option>
+            <option>Passenger Van</option>
+            <option>Mini Bus</option>
+            <option>Tour Coach</option>
+            <option>Box Lorry</option>
+            <option>Flatbed Truck</option>
+            <option>Double Cab</option>
+          </select>
+        </Field>
+        <Field label="Pickup Location">
+          <input
+            value={form.pickupLocation}
+            onChange={(e) => setForm({ ...form, pickupLocation: e.target.value })}
+            className="h-11 w-full rounded-md border bg-background px-3 outline-none ring-offset-background focus:ring-2 focus:ring-primary"
+          />
+        </Field>
+        <Field label="Drop-off Location">
+          <input
+            value={form.dropoffLocation}
+            onChange={(e) => setForm({ ...form, dropoffLocation: e.target.value })}
+            className="h-11 w-full rounded-md border bg-background px-3 outline-none ring-offset-background focus:ring-2 focus:ring-primary"
+          />
+        </Field>
+        <Field label="Start Date">
+          <input
+            type="date"
+            value={form.startDate}
+            onChange={(e) => setForm({ ...form, startDate: e.target.value })}
+            className="h-11 w-full rounded-md border bg-background px-3 outline-none ring-offset-background focus:ring-2 focus:ring-primary"
+          />
+        </Field>
+        <Field label="End Date">
+          <input
+            type="date"
+            value={form.endDate}
+            onChange={(e) => setForm({ ...form, endDate: e.target.value })}
+            className="h-11 w-full rounded-md border bg-background px-3 outline-none ring-offset-background focus:ring-2 focus:ring-primary"
+          />
+        </Field>
+        <div className="sm:col-span-2">
+          <Field label="Message">
+            <textarea
+              rows={4}
+              value={form.message}
+              onChange={(e) => setForm({ ...form, message: e.target.value })}
+              className="w-full rounded-md border bg-background px-3 py-2 outline-none ring-offset-background focus:ring-2 focus:ring-primary"
+            />
+          </Field>
+        </div>
+      </div>
+      <div className="flex justify-end">
+        <Button type="submit" className="btn-gradient text-primary-foreground">
+          Send Message
+        </Button>
+      </div>
+    </form>
   );
 }
 
