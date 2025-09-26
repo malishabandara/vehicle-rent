@@ -217,18 +217,42 @@ export default function Index() {
               </p>
             </div>
           </div>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {vehicles.map((v) => (
-              <VehicleCard
-                key={v.title}
-                v={v}
-                onQuote={(title) => setSelectedVehicle(title)}
-                onWhatsApp={(title) => {
-                  setSelectedVehicle(title);
-                  setWaOpen(true);
-                }}
-              />
+          <div className="mb-6 flex flex-wrap gap-3">
+            {([
+              { key: "car", label: "Cars" },
+              { key: "van", label: "Vans" },
+              { key: "bus", label: "Buses" },
+              { key: "lorry", label: "Lorries" },
+            ] as const).map((c) => (
+              <button
+                key={c.key}
+                onClick={() => setCategory(c.key)}
+                className={
+                  "rounded-full border px-4 py-2 text-sm transition " +
+                  (category === c.key
+                    ? "bg-primary text-primary-foreground border-primary"
+                    : "hover:bg-muted")
+                }
+                type="button"
+              >
+                {c.label}
+              </button>
             ))}
+          </div>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {vehicles
+              .filter((v) => v.category === category)
+              .map((v) => (
+                <VehicleCard
+                  key={v.title}
+                  v={v}
+                  onQuote={(title) => setSelectedVehicle(title)}
+                  onWhatsApp={(title) => {
+                    setSelectedVehicle(title);
+                    setWaOpen(true);
+                  }}
+                />
+              ))}
           </div>
         </div>
       </section>
