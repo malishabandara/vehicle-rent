@@ -21,6 +21,7 @@ export default function Index() {
   );
   const [error, setError] = useState<string>("");
   const [waOpen, setWaOpen] = useState(false);
+  const [category, setCategory] = useState<"car" | "van" | "bus" | "lorry">("car");
 
   useEffect(() => {
     const usp = new URLSearchParams(window.location.search);
