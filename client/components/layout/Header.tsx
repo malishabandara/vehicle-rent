@@ -44,7 +44,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/50">
       <div className="container-tight flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-primary text-primary-foreground shadow overflow-hidden">
             <img
               src="https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800"
@@ -56,7 +56,7 @@ export default function Header() {
             <span className="text-lg">CNS</span>
             <span className="text-primary"> Travels</span>
           </div>
-        </Link>
+        </a>
 
         <nav className="hidden md:block">
           <NavLinks />
