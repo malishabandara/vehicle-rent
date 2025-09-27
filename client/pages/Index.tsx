@@ -343,10 +343,11 @@ export default function Index() {
           <div className="mb-6 flex flex-wrap gap-3">
             {(
               [
-                { key: "car", label: "Cars" },
-                { key: "van", label: "Vans" },
-                { key: "bus", label: "Buses" },
                 { key: "lorry", label: "Lorries" },
+                { key: "van", label: "Vans" },
+                { key: "car", label: "Cars" },
+                { key: "bus", label: "Buses" },
+                
               ] as const
             ).map((c) => (
               <button
