@@ -732,14 +732,24 @@ function ContactForm({ selectedVehicle }: { selectedVehicle: string }) {
             className="h-11 w-full rounded-md border bg-background px-3 outline-none ring-offset-background focus:ring-2 focus:ring-primary"
           >
             <option value="">Select vehicle</option>
+            <option>Dimo Batta 7ft</option>
+            <option>Dimo lokka 8.5ft</option>
+            <option>Lorry 10.5ft</option>
+            <option>Lorry 12.5ft</option>
+            <option>Lorry 14.5 ft</option>
+            <option>Lorry 16.5ft</option>
+            <option>Lorry 18.5 ft</option>
+            <option>Lorry 20 ft</option>
+            <option>Dolphin Van</option>
+            <option>Caravan</option>
+            <option>Mazda Van</option>
+            <option>KDH Flat Roof</option>
+            <option>KDH High Roof</option>
             <option>Sedan Car</option>
             <option>Luxury Car</option>
-            <option>Passenger Van</option>
+            <option>Double Cab</option>
             <option>Mini Bus</option>
             <option>Tour Coach</option>
-            <option>Box Lorry</option>
-            <option>Flatbed Truck</option>
-            <option>Double Cab</option>
           </select>
         </Field>
         <Field label="Pickup Location">
