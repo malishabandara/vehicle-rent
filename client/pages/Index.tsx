@@ -42,7 +42,7 @@ export default function Index() {
       {
         title: "Sedan Car",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fab759887ccd440d68814445782e31958?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F3f1bf1fbc3d84dcb90fa5ec8eec33228?format=webp&width=800",
         category: "car",
         specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Airport", "City Ride"],
@@ -50,7 +50,7 @@ export default function Index() {
       {
         title: "Luxury Car",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F9f7568129cbd4162baa5a67db6dd49aa?format=webp&width=800",
         category: "car",
         specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Business", "Premium"],
@@ -90,7 +90,39 @@ export default function Index() {
       {
         title: "KDH High Roof",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fc33d63569d50437288d0110eda969d88?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F8c9e77cbef0d4b90b1e8fe29e498d736?format=webp&width=800",
+        category: "van",
+        specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
+        tags: ["Group", "Tours"],
+      },
+      {
+        title: "Caravan",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F3283cd5bb6c74cb1b15166afab8a4e68?format=webp&width=800",
+        category: "van",
+        specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
+        tags: ["Group", "Tours"],
+      },
+      {
+        title: "Mazda Van",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F558d62c84be2428ba7ad67c8649f60a8?format=webp&width=800",
+        category: "van",
+        specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
+        tags: ["Group", "Tours"],
+      },
+      {
+        title: "KDH Flat Roof",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Ffb3c36f78e09456a8cc7d19ad9685f99?format=webp&width=800",
+        category: "van",
+        specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
+        tags: ["Group", "Tours"],
+      },
+      {
+        title: "KDH High Roof",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F9e3c5e8b89ed4c95bd72b1436e7d6c72?format=webp&width=800",
         category: "van",
         specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
         tags: ["Group", "Tours"],
@@ -98,7 +130,7 @@ export default function Index() {
       {
         title: "Mini Bus",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F98e98e12a6ab481182549eb1b18e9dc6?format=webp&width=800",
         category: "bus",
         specs: { seats: "20-30 Passengers", ac: true, transmission: "Manual" },
         tags: ["Events", "Corporate"],
@@ -106,7 +138,7 @@ export default function Index() {
       {
         title: "Tour Coach",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fab759887ccd440d68814445782e31958?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F4288df7081af4ac887e2c9144548d412?format=webp&width=800",
         category: "bus",
         specs: { seats: "40+ Passengers", ac: true, transmission: "Manual" },
         tags: ["Long Trips", "Comfort"],
@@ -205,7 +237,98 @@ export default function Index() {
       {
         title: "Lorry 20ft",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fbf9d0a36a1304cbd80656e8dce43ba53?format=webp&width=800",
+        category: "lorry",
+        specs: {
+          seats: "Crew 2",
+          ac: false,
+          transmission: "Manual",
+          luggage: "Moves",
+        },
+        tags: ["Cargo", "Moves"],
+      },
+      {
+        title: "Dimo lokka 8.5ft",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fbd57c45c6ad9424c9c09bb3ede428858?format=webp&width=800",
+        category: "lorry",
+        specs: {
+          seats: "Crew 2",
+          ac: false,
+          transmission: "Manual",
+          luggage: "Moves",
+        },
+        tags: ["Cargo", "Moves"],
+      },
+      {
+        title: "Lorry 10.5ft",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F95106114e27e4395bb93d82e6c9d7ba6?format=webp&width=800",
+        category: "lorry",
+        specs: {
+          seats: "Crew 2",
+          ac: false,
+          transmission: "Manual",
+          luggage: "Moves",
+        },
+        tags: ["Cargo", "Moves"],
+      },
+      {
+        title: "Lorry 12.5ft",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F10d915ac218444aeacd809608ceb70d1?format=webp&width=800",
+        category: "lorry",
+        specs: {
+          seats: "Crew 2",
+          ac: false,
+          transmission: "Manual",
+          luggage: "Moves",
+        },
+        tags: ["Cargo", "Moves"],
+      },
+      {
+        title: "Lorry 14.5 ft",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F7363e69877af4030937051416fe99ce8?format=webp&width=800",
+        category: "lorry",
+        specs: {
+          seats: "Crew 2",
+          ac: false,
+          transmission: "Manual",
+          luggage: "Moves",
+        },
+        tags: ["Cargo", "Moves"],
+      },
+      {
+        title: "Lorry 16.5ft",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F93d71fea63684e04b9f03576d291565b?format=webp&width=800",
+        category: "lorry",
+        specs: {
+          seats: "Crew 2",
+          ac: false,
+          transmission: "Manual",
+          luggage: "Moves",
+        },
+        tags: ["Cargo", "Moves"],
+      },
+      {
+        title: "Lorry 18.5 ft",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F239735fd70c14d63afbfe7582c3e307b?format=webp&width=800",
+        category: "lorry",
+        specs: {
+          seats: "Crew 2",
+          ac: false,
+          transmission: "Manual",
+          luggage: "Moves",
+        },
+        tags: ["Cargo", "Moves"],
+      },
+      {
+        title: "Lorry 20ft",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F4a6a9330ebc344e6a7add1e2cb1c583c?format=webp&width=800",
         category: "lorry",
         specs: {
           seats: "Crew 2",
@@ -226,7 +349,7 @@ export default function Index() {
       {
         title: "Double Cab",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F41ff4124f72b435790cc5813d0a951c0?format=webp&width=800",
         category: "car",
         specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
         tags: ["Adventure"],
@@ -495,7 +618,7 @@ export default function Index() {
       </section>
 
       <Dialog open={waOpen} onOpenChange={setWaOpen}>
-        <DialogContent>
+        <DialogContent className="max-h-[90vh] overflow-y-auto">
           <DialogHeader>
             <DialogTitle>WhatsApp Inquiry</DialogTitle>
             <DialogDescription>
