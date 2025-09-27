@@ -45,7 +45,7 @@ export default function Footer() {
           <h4 className="mb-3 font-semibold">Contact</h4>
           <ul className="space-y-2 text-sm not-italic">
             <li className="flex items-center gap-2">
-              <Phone className="h-4 w-4" /> +94
+              <Phone className="h-4 w-4" /> +94 71 888 555 7
             </li>
             <li className="flex items-center gap-2">
               <Mail className="h-4 w-4" /> info@cnstravels.lk
@@ -84,7 +84,7 @@ export default function Footer() {
       </div>
       <div className="border-t">
         <div className="container-tight py-6 text-xs text-muted-foreground flex flex-col md:flex-row items-center justify-between gap-3">
-          <p>© {new Date().getFullYear()} CNS Travels. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} NextGen Web Works. All rights reserved. +94 78 723 9394</p>
           <p>Privacy · Terms</p>
         </div>
       </div>
