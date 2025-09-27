@@ -58,38 +58,6 @@ export default function Index() {
       {
         title: "Dolphin Van",
         image:
-          "./dolphin van.png",
-        category: "van",
-        specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
-        tags: ["Group", "Tours"],
-      },
-      {
-        title: "Caravan",
-        image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fc33d63569d50437288d0110eda969d88?format=webp&width=800",
-        category: "van",
-        specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
-        tags: ["Group", "Tours"],
-      },
-      {
-        title: "Mazda Van",
-        image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fc33d63569d50437288d0110eda969d88?format=webp&width=800",
-        category: "van",
-        specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
-        tags: ["Group", "Tours"],
-      },
-      {
-        title: "KDH Flat Roof",
-        image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fc33d63569d50437288d0110eda969d88?format=webp&width=800",
-        category: "van",
-        specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
-        tags: ["Group", "Tours"],
-      },
-      {
-        title: "KDH High Roof",
-        image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F8c9e77cbef0d4b90b1e8fe29e498d736?format=webp&width=800",
         category: "van",
         specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
@@ -130,7 +98,7 @@ export default function Index() {
       {
         title: "Mini Bus",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F98e98e12a6ab481182549eb1b18e9dc6?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800",
         category: "bus",
         specs: { seats: "20-30 Passengers", ac: true, transmission: "Manual" },
         tags: ["Events", "Corporate"],
@@ -138,104 +106,13 @@ export default function Index() {
       {
         title: "Tour Coach",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F4288df7081af4ac887e2c9144548d412?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fab759887ccd440d68814445782e31958?format=webp&width=800",
         category: "bus",
         specs: { seats: "40+ Passengers", ac: true, transmission: "Manual" },
         tags: ["Long Trips", "Comfort"],
       },
       {
         title: "Dimo Batta 7ft",
-        image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800",
-        category: "lorry",
-        specs: {
-          seats: "Crew 2",
-          ac: false,
-          transmission: "Manual",
-          luggage: "Moves",
-        },
-        tags: ["Cargo", "Moves"],
-      },
-      {
-        title: "Dimo lokka 8.5ft",
-        image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800",
-        category: "lorry",
-        specs: {
-          seats: "Crew 2",
-          ac: false,
-          transmission: "Manual",
-          luggage: "Moves",
-        },
-        tags: ["Cargo", "Moves"],
-      },
-      {
-        title: "Lorry 10.5ft",
-        image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800",
-        category: "lorry",
-        specs: {
-          seats: "Crew 2",
-          ac: false,
-          transmission: "Manual",
-          luggage: "Moves",
-        },
-        tags: ["Cargo", "Moves"],
-      },
-      {
-        title: "Lorry 12.5ft",
-        image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800",
-        category: "lorry",
-        specs: {
-          seats: "Crew 2",
-          ac: false,
-          transmission: "Manual",
-          luggage: "Moves",
-        },
-        tags: ["Cargo", "Moves"],
-      },
-      {
-        title: "Lorry 14.5 ft",
-        image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800",
-        category: "lorry",
-        specs: {
-          seats: "Crew 2",
-          ac: false,
-          transmission: "Manual",
-          luggage: "Moves",
-        },
-        tags: ["Cargo", "Moves"],
-      },
-      {
-        title: "Lorry 16.5ft",
-        image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800",
-        category: "lorry",
-        specs: {
-          seats: "Crew 2",
-          ac: false,
-          transmission: "Manual",
-          luggage: "Moves",
-        },
-        tags: ["Cargo", "Moves"],
-      },
-      {
-        title: "Lorry 18.5 ft",
-        image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800",
-        category: "lorry",
-        specs: {
-          seats: "Crew 2",
-          ac: false,
-          transmission: "Manual",
-          luggage: "Moves",
-        },
-        tags: ["Cargo", "Moves"],
-      },
-      {
-        title: "Lorry 20ft",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fbf9d0a36a1304cbd80656e8dce43ba53?format=webp&width=800",
         category: "lorry",
@@ -337,14 +214,6 @@ export default function Index() {
           luggage: "Moves",
         },
         tags: ["Cargo", "Moves"],
-      },
-      {
-        title: "Flatbed Truck",
-        image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800",
-        category: "lorry",
-        specs: { seats: "Crew 2", ac: false, transmission: "Manual" },
-        tags: ["Logistics"],
       },
       {
         title: "Double Cab",
