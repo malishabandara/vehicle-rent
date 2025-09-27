@@ -470,7 +470,7 @@ export default function Index() {
               </p>
               <div className="space-y-3 text-sm not-italic">
                 <p className="flex items-center gap-2">
-                  <PhoneCall className="h-4 w-4 text-primary" /> +94
+                  <PhoneCall className="h-4 w-4 text-primary" /> +94 71 888 5557
                 </p>
                 <p className="flex items-center gap-2">
                   <Mail className="h-4 w-4 text-primary" /> info@cnstravels.lk
