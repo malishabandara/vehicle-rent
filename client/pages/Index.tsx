@@ -56,9 +56,9 @@ export default function Index() {
         tags: ["Business", "Premium"],
       },
       {
-        title: "Dolphin Van",
+        title: "Mini Van",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F8c9e77cbef0d4b90b1e8fe29e498d736?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F558d62c84be2428ba7ad67c8649f60a8?format=webp&width=800",
         category: "van",
         specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
         tags: ["Group", "Tours"],
@@ -72,9 +72,9 @@ export default function Index() {
         tags: ["Group", "Tours"],
       },
       {
-        title: "Mini Van",
+        title: "Dolphin Van",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F558d62c84be2428ba7ad67c8649f60a8?format=webp&width=800",
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F8c9e77cbef0d4b90b1e8fe29e498d736?format=webp&width=800",
         category: "van",
         specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
         tags: ["Group", "Tours"],
