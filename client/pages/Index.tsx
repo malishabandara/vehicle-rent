@@ -535,6 +535,18 @@ export default function Index() {
               >
                 WhatsApp
               </a>
+              <div className="mt-4">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.7726645765065!2d80.6209131747643!3d7.4903348111740495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae345397239096b%3A0x511720e6cd0fbb12!2sChanaka%20Inn!5e0!3m2!1sen!2slk!4v1759126780369!5m2!1sen!2slk"
+                  width="400"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="w-full rounded-md"
+                />
+              </div>
             </aside>
           </div>
         </div>
