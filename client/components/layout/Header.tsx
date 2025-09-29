@@ -45,17 +45,11 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/50">
       <div className="container-tight flex h-16 items-center justify-between">
         <a href="/" className="flex items-center gap-2">
-          <span className="inline-flex h-9 w-9 items-center justify-center rounded-md bg-primary text-primary-foreground shadow overflow-hidden">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fe3c46008562646e690d24a73450e26a9?format=webp&width=800"
-              alt="CNS Travels"
-              className="h-6 w-6 object-contain"
-            />
-          </span>
-          <div className="font-extrabold tracking-tight leading-none">
-            <span className="text-lg">CNS</span>
-            <span className="text-primary"> Travels</span>
-          </div>
+          <img
+            src="https://cdn.builder.io/api/v1/image/assets%2F17c7b7d3249040d5b2a0a3b0be9c9a63%2F67d24b086652452db60b0b810825cce3?format=webp&width=256"
+            alt="CNS Travels"
+            className="h-16 w-auto object-contain drop-shadow"
+          />
         </a>
 
         <nav className="hidden md:block">

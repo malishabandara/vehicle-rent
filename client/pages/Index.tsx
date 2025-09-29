@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import VehicleCard, { type Vehicle } from "@/components/VehicleCard";
+import HeroSlider from "@/components/HeroSlider";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -17,6 +18,11 @@ import {
   Map,
   Mail,
   PhoneCall,
+  Plane,
+  Users,
+  Briefcase,
+  Package,
+  CheckCircle2,
 } from "lucide-react";
 import type { ContactRequest, ContactResponse } from "@shared/api";
 
@@ -39,6 +45,30 @@ export default function Index() {
 
   const vehicles: Vehicle[] = useMemo(
     () => [
+      {
+        title: "Nano Car",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F41ff4124f72b435790cc5813d0a951c0?format=webp&width=800",
+        category: "car",
+        specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
+        tags: ["Adventure"],
+      },
+      {
+        title: "Mini Car",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F41ff4124f72b435790cc5813d0a951c0?format=webp&width=800",
+        category: "car",
+        specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
+        tags: ["Adventure"],
+      },
+      {
+        title: "Wagon R",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F41ff4124f72b435790cc5813d0a951c0?format=webp&width=800",
+        category: "car",
+        specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
+        tags: ["Adventure"],
+      },
       {
         title: "Sedan Car",
         image:
@@ -64,7 +94,7 @@ export default function Index() {
         tags: ["Group", "Tours"],
       },
       {
-        title: "Van",
+        title: "Non AC Van",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F3283cd5bb6c74cb1b15166afab8a4e68?format=webp&width=800",
         category: "van",
@@ -72,7 +102,7 @@ export default function Index() {
         tags: ["Group", "Tours"],
       },
       {
-        title: "Dolphin Van",
+        title: "AC Van",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F8c9e77cbef0d4b90b1e8fe29e498d736?format=webp&width=800",
         category: "van",
@@ -96,7 +126,7 @@ export default function Index() {
         tags: ["Group", "Tours"],
       },
       {
-        title: "Mini Bus",
+        title: "Bus",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800",
         category: "bus",
@@ -104,7 +134,7 @@ export default function Index() {
         tags: ["Events", "Corporate"],
       },
       {
-        title: "Bus",
+        title: "AC Bus",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fab759887ccd440d68814445782e31958?format=webp&width=800",
         category: "bus",
@@ -215,17 +245,26 @@ export default function Index() {
         },
         tags: ["Cargo", "Moves"],
       },
-      {
-        title: "Double Cab",
-        image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F41ff4124f72b435790cc5813d0a951c0?format=webp&width=800",
-        category: "car",
-        specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
-        tags: ["Adventure"],
-      },
     ],
     [],
   );
+
+  const heroImages = useMemo(() => {
+    const categories = [
+      { key: "car", label: "Cars" },
+      { key: "van", label: "Vans" },
+      { key: "bus", label: "Buses" },
+      { key: "lorry", label: "Lorries" },
+    ] as const;
+    return categories.map((c) => {
+      const m = vehicles.find((v) => v.category === c.key);
+      return {
+        src: m?.image || "/placeholder.svg",
+        alt: c.label,
+        label: c.label,
+      };
+    });
+  }, [vehicles]);
 
   async function submitContact(form: ContactRequest) {
     setStatus("sending");
@@ -301,28 +340,7 @@ export default function Index() {
             </div>
           </div>
           <div className="relative">
-            <div className="grid grid-cols-2 gap-4">
-              <img
-                className="rounded-xl shadow-lg"
-                src="https://images.unsplash.com/photo-1549921296-3a6b3c2bba94?q=80&w=800&auto=format&fit=crop"
-                alt="Sedan"
-              />
-              <img
-                className="rounded-xl shadow-lg"
-                src="https://images.unsplash.com/photo-1608138273951-95d0c7b4f2bc?q=80&w=800&auto=format&fit=crop"
-                alt="Van"
-              />
-              <img
-                className="rounded-xl shadow-lg"
-                src="https://images.unsplash.com/photo-1600240644455-a0c124c0b4d6?q=80&w=800&auto=format&fit=crop"
-                alt="Mini bus"
-              />
-              <img
-                className="rounded-xl shadow-lg"
-                src="https://images.unsplash.com/photo-1542326237-94b1c5a538d8?q=80&w=800&auto=format&fit=crop"
-                alt="Lorry"
-              />
-            </div>
+            <HeroSlider images={heroImages} />
           </div>
         </div>
       </section>
@@ -347,7 +365,6 @@ export default function Index() {
                 { key: "van", label: "Vans" },
                 { key: "car", label: "Cars" },
                 { key: "bus", label: "Buses" },
-                
               ] as const
             ).map((c) => (
               <button
@@ -390,22 +407,26 @@ export default function Index() {
       >
         <div className="container-tight grid gap-8 md:grid-cols-4">
           <Feature
-            icon={<Car className="h-6 w-6 text-primary" />}
+            icon={<Plane className="h-6 w-6 text-primary" aria-hidden="true" />}
             title="Airport Transfers"
             desc="On-time pickups and drop-offs to CMB and domestic airports."
           />
           <Feature
-            icon={<Car className="h-6 w-6 text-primary" />}
+            icon={<Users className="h-6 w-6 text-primary" aria-hidden="true" />}
             title="Group Tours"
             desc="Comfortable vans and buses for families and teams."
           />
           <Feature
-            icon={<Bus className="h-6 w-6 text-primary" />}
+            icon={
+              <Briefcase className="h-6 w-6 text-primary" aria-hidden="true" />
+            }
             title="Corporate Travel"
             desc="Executive vehicles with professional chauffeurs."
           />
           <Feature
-            icon={<Truck className="h-6 w-6 text-primary" />}
+            icon={
+              <Package className="h-6 w-6 text-primary" aria-hidden="true" />
+            }
             title="Logistics & Moves"
             desc="Box lorries and trucks for safe cargo transport."
           />
@@ -413,37 +434,69 @@ export default function Index() {
       </section>
 
       {/* About */}
-      <section className="section" id="about">
-        <div className="container-tight grid gap-10 md:grid-cols-2">
+      <section
+        className="section border-y bg-gradient-to-b from-background to-secondary/30"
+        id="about"
+      >
+        <div className="container-tight grid items-center gap-10 md:grid-cols-2">
           <div className="order-2 md:order-1">
-            <h2 className="text-3xl md:text-4xl font-bold">
+            <span className="inline-flex items-center gap-2 rounded-full bg-primary/15 px-3 py-1 text-xs font-medium text-primary ring-1 ring-primary/30">
+              <ShieldCheck className="h-4 w-4" aria-hidden="true" /> Trusted
+              transport partner
+            </span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold">
               About CNS Travels
             </h2>
-            <p className="mt-4 text-muted-foreground">
-              We are a customer-first transport partner with a well-maintained
-              fleet and experienced drivers. From short city rides to multi-day
-              tours, we focus on comfort, safety and transparent pricing.
+            <p className="mt-4 text-base md:text-lg text-muted-foreground">
+              We are a customer‑first transport partner with a well‑maintained
+              fleet and experienced drivers. From quick city rides to multi‑day
+              tours, we focus on comfort, safety, and transparent pricing.
             </p>
-            <ul className="mt-6 space-y-3 text-sm">
-              <li className="flex gap-2">
-                <span className="text-primary">•</span> Clean, air‑conditioned
-                vehicles
+            <ul className="mt-6 grid gap-3 text-sm">
+              <li className="flex items-center gap-2">
+                <CheckCircle2
+                  className="h-4 w-4 text-primary"
+                  aria-hidden="true"
+                />{" "}
+                Clean, air‑conditioned vehicles
               </li>
-              <li className="flex gap-2">
-                <span className="text-primary">•</span> Professional,
-                English-speaking drivers
+              <li className="flex items-center gap-2">
+                <CheckCircle2
+                  className="h-4 w-4 text-primary"
+                  aria-hidden="true"
+                />{" "}
+                Professional, English‑speaking drivers
               </li>
-              <li className="flex gap-2">
-                <span className="text-primary">•</span> Flexible hourly, daily
-                or per‑km packages
+              <li className="flex items-center gap-2">
+                <CheckCircle2
+                  className="h-4 w-4 text-primary"
+                  aria-hidden="true"
+                />{" "}
+                Flexible hourly, daily or per‑km packages
               </li>
             </ul>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a
+                href="tel:+94718885557"
+                className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
+              >
+                Call Now
+              </a>
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm"
+              >
+                Contact Form
+              </a>
+            </div>
           </div>
           <div className="order-1 md:order-2">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800"
-              alt="Car rental handover"
-              className="rounded-xl border shadow-lg"
+              src="https://cdn.builder.io/api/v1/image/assets%2F17c7b7d3249040d5b2a0a3b0be9c9a63%2F617bf586c7094aa59523e178358655af?format=webp&width=800"
+              alt="CNS Travels — cars for rent"
+              className="w-full rounded-xl drop-shadow-2xl"
+              loading="lazy"
+              referrerPolicy="no-referrer"
             />
           </div>
         </div>
@@ -532,11 +585,12 @@ function Feature({
   desc: string;
 }) {
   return (
-    <div className="rounded-xl border bg-card p-6 shadow-sm">
-      <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-md bg-primary/15 text-primary">
+    <div className="group relative overflow-hidden rounded-2xl border bg-card/60 p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg">
+      <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-b from-primary/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15 text-primary ring-1 ring-primary/30">
         {icon}
       </div>
-      <h3 className="font-semibold">{title}</h3>
+      <h3 className="text-lg font-semibold">{title}</h3>
       <p className="mt-1 text-sm text-muted-foreground">{desc}</p>
     </div>
   );
