@@ -11,30 +11,30 @@ export default function Header() {
     return () => window.removeEventListener("resize", onResize);
   }, []);
 
-  const NavLinks = () => (
+  const NavLinks = ({ onNavigate }: { onNavigate?: () => void }) => (
     <ul className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8 text-sm">
       <li>
-        <a href="#home" className="hover:text-primary transition-colors">
+        <a href="#home" className="hover:text-primary transition-colors" onClick={onNavigate}>
           Home
         </a>
       </li>
       <li>
-        <a href="#fleet" className="hover:text-primary transition-colors">
+        <a href="#fleet" className="hover:text-primary transition-colors" onClick={onNavigate}>
           Fleet
         </a>
       </li>
       <li>
-        <a href="#services" className="hover:text-primary transition-colors">
+        <a href="#services" className="hover:text-primary transition-colors" onClick={onNavigate}>
           Services
         </a>
       </li>
       <li>
-        <a href="#about" className="hover:text-primary transition-colors">
+        <a href="#about" className="hover:text-primary transition-colors" onClick={onNavigate}>
           About
         </a>
       </li>
       <li>
-        <a href="#contact" className="hover:text-primary transition-colors">
+        <a href="#contact" className="hover:text-primary transition-colors" onClick={onNavigate}>
           Contact
         </a>
       </li>
@@ -42,7 +42,7 @@ export default function Header() {
   );
 
   return (
-    <header className="sticky top-0 z-50 border-b bg-background/70 backdrop-blur supports-[backdrop-filter]:bg-background/50">
+    <header className="sticky top-0 z-50 border-b bg-background">
       <div className="container-tight flex h-16 items-center justify-between">
         <a href="/" className="flex items-center gap-2">
           <img
@@ -75,7 +75,7 @@ export default function Header() {
       {open && (
         <div className="md:hidden border-t bg-background">
           <div className="container-tight py-4">
-            <NavLinks />
+            <NavLinks onNavigate={() => setOpen(false)} />
           </div>
         </div>
       )}
