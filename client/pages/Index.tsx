@@ -45,6 +45,30 @@ export default function Index() {
   const vehicles: Vehicle[] = useMemo(
     () => [
       {
+        title: "Nano Car",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F41ff4124f72b435790cc5813d0a951c0?format=webp&width=800",
+        category: "car",
+        specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
+        tags: ["Adventure"],
+      },
+      {
+        title: "Mini Car",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F41ff4124f72b435790cc5813d0a951c0?format=webp&width=800",
+        category: "car",
+        specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
+        tags: ["Adventure"],
+      },
+      {
+        title: "Wagon R",
+        image:
+          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F41ff4124f72b435790cc5813d0a951c0?format=webp&width=800",
+        category: "car",
+        specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
+        tags: ["Adventure"],
+      },
+      {
         title: "Sedan Car",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F3f1bf1fbc3d84dcb90fa5ec8eec33228?format=webp&width=800",
@@ -69,7 +93,7 @@ export default function Index() {
         tags: ["Group", "Tours"],
       },
       {
-        title: "Van",
+        title: "Non AC Van",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F3283cd5bb6c74cb1b15166afab8a4e68?format=webp&width=800",
         category: "van",
@@ -77,7 +101,7 @@ export default function Index() {
         tags: ["Group", "Tours"],
       },
       {
-        title: "Dolphin Van",
+        title: "AC Van",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F8c9e77cbef0d4b90b1e8fe29e498d736?format=webp&width=800",
         category: "van",
@@ -101,7 +125,7 @@ export default function Index() {
         tags: ["Group", "Tours"],
       },
       {
-        title: "Mini Bus",
+        title: "Bus",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800",
         category: "bus",
@@ -109,7 +133,7 @@ export default function Index() {
         tags: ["Events", "Corporate"],
       },
       {
-        title: "Bus",
+        title: "AC Bus",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fab759887ccd440d68814445782e31958?format=webp&width=800",
         category: "bus",
@@ -219,14 +243,6 @@ export default function Index() {
           luggage: "Moves",
         },
         tags: ["Cargo", "Moves"],
-      },
-      {
-        title: "Double Cab",
-        image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F41ff4124f72b435790cc5813d0a951c0?format=webp&width=800",
-        category: "car",
-        specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
-        tags: ["Adventure"],
       },
     ],
     [],
