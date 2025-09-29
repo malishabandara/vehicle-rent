@@ -21,6 +21,7 @@ import {
   Users,
   Briefcase,
   Package,
+  CheckCircle2,
 } from "lucide-react";
 import type { ContactRequest, ContactResponse } from "@shared/api";
 
@@ -417,38 +418,43 @@ export default function Index() {
       </section>
 
       {/* About */}
-      <section className="section" id="about">
-        <div className="container-tight grid gap-10 md:grid-cols-2">
+      <section className="section border-y bg-gradient-to-b from-background to-secondary/30" id="about">
+        <div className="container-tight grid items-center gap-10 md:grid-cols-2">
           <div className="order-2 md:order-1">
-            <h2 className="text-3xl md:text-4xl font-bold">
-              About CNS Travels
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              We are a customer-first transport partner with a well-maintained
-              fleet and experienced drivers. From short city rides to multi-day
-              tours, we focus on comfort, safety and transparent pricing.
+            <span className="inline-flex items-center gap-2 rounded-full bg-primary/15 px-3 py-1 text-xs font-medium text-primary ring-1 ring-primary/30">
+              <ShieldCheck className="h-4 w-4" aria-hidden="true" /> Trusted transport partner
+            </span>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold">About CNS Travels</h2>
+            <p className="mt-4 text-base md:text-lg text-muted-foreground">
+              We are a customer‑first transport partner with a well‑maintained fleet and experienced drivers. From quick city rides to multi‑day tours, we focus on comfort, safety, and transparent pricing.
             </p>
-            <ul className="mt-6 space-y-3 text-sm">
-              <li className="flex gap-2">
-                <span className="text-primary">•</span> Clean, air‑conditioned
-                vehicles
-              </li>
-              <li className="flex gap-2">
-                <span className="text-primary">•</span> Professional,
-                English-speaking drivers
-              </li>
-              <li className="flex gap-2">
-                <span className="text-primary">•</span> Flexible hourly, daily
-                or per‑km packages
-              </li>
+            <ul className="mt-6 grid gap-3 text-sm">
+              <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" aria-hidden="true" /> Clean, air‑conditioned vehicles</li>
+              <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" aria-hidden="true" /> Professional, English‑speaking drivers</li>
+              <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" aria-hidden="true" /> Flexible hourly, daily or per‑km packages</li>
             </ul>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <a href="tel:+94718885557" className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90">
+                Call Now
+              </a>
+              <a href="#contact" className="inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm">
+                Contact Form
+              </a>
+            </div>
           </div>
           <div className="order-1 md:order-2">
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800"
-              alt="Car rental handover"
-              className="rounded-xl border shadow-lg"
-            />
+            <div className="relative overflow-hidden rounded-2xl border bg-card/60 p-2 shadow-xl">
+              <div className="absolute -left-12 -top-12 h-40 w-40 rounded-full bg-primary/20 blur-3xl" />
+              <div className="aspect-[16/10] w-full overflow-hidden rounded-xl bg-secondary/20">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F17c7b7d3249040d5b2a0a3b0be9c9a63%2F617bf586c7094aa59523e178358655af?format=webp&width=800"
+                  alt="CNS Travels — cars for rent"
+                  className="h-full w-full object-contain"
+                  loading="lazy"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
