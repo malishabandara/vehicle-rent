@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import VehicleCard, { type Vehicle } from "@/components/VehicleCard";
+import HeroSlider from "@/components/HeroSlider";
 import { Button } from "@/components/ui/button";
 import {
   Dialog,
@@ -248,6 +249,19 @@ export default function Index() {
     [],
   );
 
+  const heroImages = useMemo(() => {
+    const categories = [
+      { key: "car", label: "Cars" },
+      { key: "van", label: "Vans" },
+      { key: "bus", label: "Buses" },
+      { key: "lorry", label: "Lorries" },
+    ] as const;
+    return categories.map((c) => {
+      const m = vehicles.find((v) => v.category === c.key);
+      return { src: m?.image || "/placeholder.svg", alt: c.label, label: c.label };
+    });
+  }, [vehicles]);
+
   async function submitContact(form: ContactRequest) {
     setStatus("sending");
     setError("");
@@ -322,28 +336,7 @@ export default function Index() {
             </div>
           </div>
           <div className="relative">
-            <div className="grid grid-cols-2 gap-4">
-              <img
-                className="rounded-xl shadow-lg"
-                src="https://images.unsplash.com/photo-1549921296-3a6b3c2bba94?q=80&w=800&auto=format&fit=crop"
-                alt="Sedan"
-              />
-              <img
-                className="rounded-xl shadow-lg"
-                src="https://images.unsplash.com/photo-1608138273951-95d0c7b4f2bc?q=80&w=800&auto=format&fit=crop"
-                alt="Van"
-              />
-              <img
-                className="rounded-xl shadow-lg"
-                src="https://images.unsplash.com/photo-1600240644455-a0c124c0b4d6?q=80&w=800&auto=format&fit=crop"
-                alt="Mini bus"
-              />
-              <img
-                className="rounded-xl shadow-lg"
-                src="https://images.unsplash.com/photo-1542326237-94b1c5a538d8?q=80&w=800&auto=format&fit=crop"
-                alt="Lorry"
-              />
-            </div>
+            <HeroSlider images={heroImages} />
           </div>
         </div>
       </section>
