@@ -14,27 +14,47 @@ export default function Header() {
   const NavLinks = ({ onNavigate }: { onNavigate?: () => void }) => (
     <ul className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8 text-sm">
       <li>
-        <a href="#home" className="hover:text-primary transition-colors" onClick={onNavigate}>
+        <a
+          href="#home"
+          className="hover:text-primary transition-colors"
+          onClick={onNavigate}
+        >
           Home
         </a>
       </li>
       <li>
-        <a href="#fleet" className="hover:text-primary transition-colors" onClick={onNavigate}>
+        <a
+          href="#fleet"
+          className="hover:text-primary transition-colors"
+          onClick={onNavigate}
+        >
           Fleet
         </a>
       </li>
       <li>
-        <a href="#services" className="hover:text-primary transition-colors" onClick={onNavigate}>
+        <a
+          href="#services"
+          className="hover:text-primary transition-colors"
+          onClick={onNavigate}
+        >
           Services
         </a>
       </li>
       <li>
-        <a href="#about" className="hover:text-primary transition-colors" onClick={onNavigate}>
+        <a
+          href="#about"
+          className="hover:text-primary transition-colors"
+          onClick={onNavigate}
+        >
           About
         </a>
       </li>
       <li>
-        <a href="#contact" className="hover:text-primary transition-colors" onClick={onNavigate}>
+        <a
+          href="#contact"
+          className="hover:text-primary transition-colors"
+          onClick={onNavigate}
+        >
           Contact
         </a>
       </li>
