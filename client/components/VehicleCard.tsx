@@ -30,7 +30,7 @@ export default function VehicleCard({
           <img
             src={v.image}
             alt={v.title}
-            className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+            className="max-h-full max-w-full object-contain drop-shadow-xl transition-transform duration-500 group-hover:scale-[1.03]"
             loading="lazy"
             decoding="async"
             referrerPolicy="no-referrer"
