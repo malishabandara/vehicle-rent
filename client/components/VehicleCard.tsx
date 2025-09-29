@@ -25,20 +25,22 @@ export default function VehicleCard({
 }) {
   return (
     <div className="group overflow-hidden rounded-xl border bg-card text-card-foreground shadow-sm transition hover:shadow-lg">
-      <div className="relative aspect-[4/3] overflow-hidden">
-        <img
-          src={v.image}
-          alt={v.title}
-          className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-          loading="lazy"
-          referrerPolicy="no-referrer"
-          onError={(e) => {
-            const target = e.currentTarget as HTMLImageElement;
-            if (target.src !== "/placeholder.svg")
-              target.src = "/placeholder.svg";
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+      <div className="relative aspect-[16/9] overflow-hidden bg-gradient-to-br from-muted/20 to-background">
+        <div className="absolute inset-0 flex items-center justify-center p-3 md:p-4">
+          <img
+            src={v.image}
+            alt={v.title}
+            className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-[1.03]"
+            loading="lazy"
+            decoding="async"
+            referrerPolicy="no-referrer"
+            onError={(e) => {
+              const target = e.currentTarget as HTMLImageElement;
+              if (target.src !== "/placeholder.svg") target.src = "/placeholder.svg";
+            }}
+          />
+        </div>
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
         <div className="absolute bottom-3 left-3 flex flex-wrap gap-2">
           {(v.tags ?? []).map((t) => (
             <span
