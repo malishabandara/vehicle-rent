@@ -443,18 +443,13 @@ export default function Index() {
             </div>
           </div>
           <div className="order-1 md:order-2">
-            <div className="relative overflow-hidden rounded-2xl border bg-card/60 p-2 shadow-xl">
-              <div className="absolute -left-12 -top-12 h-40 w-40 rounded-full bg-primary/20 blur-3xl" />
-              <div className="aspect-[16/10] w-full overflow-hidden rounded-xl bg-secondary/20">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F17c7b7d3249040d5b2a0a3b0be9c9a63%2F617bf586c7094aa59523e178358655af?format=webp&width=800"
-                  alt="CNS Travels — cars for rent"
-                  className="h-full w-full object-contain"
-                  loading="lazy"
-                  referrerPolicy="no-referrer"
-                />
-              </div>
-            </div>
+            <img
+              src="https://cdn.builder.io/api/v1/image/assets%2F17c7b7d3249040d5b2a0a3b0be9c9a63%2F617bf586c7094aa59523e178358655af?format=webp&width=800"
+              alt="CNS Travels — cars for rent"
+              className="w-full rounded-xl drop-shadow-2xl"
+              loading="lazy"
+              referrerPolicy="no-referrer"
+            />
           </div>
         </div>
       </section>
