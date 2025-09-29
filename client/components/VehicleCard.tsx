@@ -36,7 +36,8 @@ export default function VehicleCard({
             referrerPolicy="no-referrer"
             onError={(e) => {
               const target = e.currentTarget as HTMLImageElement;
-              if (target.src !== "/placeholder.svg") target.src = "/placeholder.svg";
+              if (target.src !== "/placeholder.svg")
+                target.src = "/placeholder.svg";
             }}
           />
         </div>

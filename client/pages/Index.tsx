@@ -258,7 +258,11 @@ export default function Index() {
     ] as const;
     return categories.map((c) => {
       const m = vehicles.find((v) => v.category === c.key);
-      return { src: m?.image || "/placeholder.svg", alt: c.label, label: c.label };
+      return {
+        src: m?.image || "/placeholder.svg",
+        alt: c.label,
+        label: c.label,
+      };
     });
   }, [vehicles]);
 
@@ -361,7 +365,6 @@ export default function Index() {
                 { key: "van", label: "Vans" },
                 { key: "car", label: "Cars" },
                 { key: "bus", label: "Buses" },
-                
               ] as const
             ).map((c) => (
               <button
@@ -414,12 +417,16 @@ export default function Index() {
             desc="Comfortable vans and buses for families and teams."
           />
           <Feature
-            icon={<Briefcase className="h-6 w-6 text-primary" aria-hidden="true" />}
+            icon={
+              <Briefcase className="h-6 w-6 text-primary" aria-hidden="true" />
+            }
             title="Corporate Travel"
             desc="Executive vehicles with professional chauffeurs."
           />
           <Feature
-            icon={<Package className="h-6 w-6 text-primary" aria-hidden="true" />}
+            icon={
+              <Package className="h-6 w-6 text-primary" aria-hidden="true" />
+            }
             title="Logistics & Moves"
             desc="Box lorries and trucks for safe cargo transport."
           />
@@ -427,26 +434,58 @@ export default function Index() {
       </section>
 
       {/* About */}
-      <section className="section border-y bg-gradient-to-b from-background to-secondary/30" id="about">
+      <section
+        className="section border-y bg-gradient-to-b from-background to-secondary/30"
+        id="about"
+      >
         <div className="container-tight grid items-center gap-10 md:grid-cols-2">
           <div className="order-2 md:order-1">
             <span className="inline-flex items-center gap-2 rounded-full bg-primary/15 px-3 py-1 text-xs font-medium text-primary ring-1 ring-primary/30">
-              <ShieldCheck className="h-4 w-4" aria-hidden="true" /> Trusted transport partner
+              <ShieldCheck className="h-4 w-4" aria-hidden="true" /> Trusted
+              transport partner
             </span>
-            <h2 className="mt-3 text-3xl md:text-4xl font-bold">About CNS Travels</h2>
+            <h2 className="mt-3 text-3xl md:text-4xl font-bold">
+              About CNS Travels
+            </h2>
             <p className="mt-4 text-base md:text-lg text-muted-foreground">
-              We are a customer‑first transport partner with a well‑maintained fleet and experienced drivers. From quick city rides to multi‑day tours, we focus on comfort, safety, and transparent pricing.
+              We are a customer‑first transport partner with a well‑maintained
+              fleet and experienced drivers. From quick city rides to multi‑day
+              tours, we focus on comfort, safety, and transparent pricing.
             </p>
             <ul className="mt-6 grid gap-3 text-sm">
-              <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" aria-hidden="true" /> Clean, air‑conditioned vehicles</li>
-              <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" aria-hidden="true" /> Professional, English‑speaking drivers</li>
-              <li className="flex items-center gap-2"><CheckCircle2 className="h-4 w-4 text-primary" aria-hidden="true" /> Flexible hourly, daily or per‑km packages</li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2
+                  className="h-4 w-4 text-primary"
+                  aria-hidden="true"
+                />{" "}
+                Clean, air‑conditioned vehicles
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2
+                  className="h-4 w-4 text-primary"
+                  aria-hidden="true"
+                />{" "}
+                Professional, English‑speaking drivers
+              </li>
+              <li className="flex items-center gap-2">
+                <CheckCircle2
+                  className="h-4 w-4 text-primary"
+                  aria-hidden="true"
+                />{" "}
+                Flexible hourly, daily or per‑km packages
+              </li>
             </ul>
             <div className="mt-6 flex flex-wrap gap-3">
-              <a href="tel:+94718885557" className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90">
+              <a
+                href="tel:+94718885557"
+                className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90"
+              >
                 Call Now
               </a>
-              <a href="#contact" className="inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm">
+              <a
+                href="#contact"
+                className="inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm"
+              >
                 Contact Form
               </a>
             </div>
