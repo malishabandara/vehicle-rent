@@ -17,6 +17,10 @@ import {
   Map,
   Mail,
   PhoneCall,
+  Plane,
+  Users,
+  Briefcase,
+  Package,
 } from "lucide-react";
 import type { ContactRequest, ContactResponse } from "@shared/api";
 
@@ -390,22 +394,22 @@ export default function Index() {
       >
         <div className="container-tight grid gap-8 md:grid-cols-4">
           <Feature
-            icon={<Car className="h-6 w-6 text-primary" />}
+            icon={<Plane className="h-6 w-6 text-primary" aria-hidden="true" />}
             title="Airport Transfers"
             desc="On-time pickups and drop-offs to CMB and domestic airports."
           />
           <Feature
-            icon={<Car className="h-6 w-6 text-primary" />}
+            icon={<Users className="h-6 w-6 text-primary" aria-hidden="true" />}
             title="Group Tours"
             desc="Comfortable vans and buses for families and teams."
           />
           <Feature
-            icon={<Bus className="h-6 w-6 text-primary" />}
+            icon={<Briefcase className="h-6 w-6 text-primary" aria-hidden="true" />}
             title="Corporate Travel"
             desc="Executive vehicles with professional chauffeurs."
           />
           <Feature
-            icon={<Truck className="h-6 w-6 text-primary" />}
+            icon={<Package className="h-6 w-6 text-primary" aria-hidden="true" />}
             title="Logistics & Moves"
             desc="Box lorries and trucks for safe cargo transport."
           />
@@ -532,11 +536,12 @@ function Feature({
   desc: string;
 }) {
   return (
-    <div className="rounded-xl border bg-card p-6 shadow-sm">
-      <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-md bg-primary/15 text-primary">
+    <div className="group relative overflow-hidden rounded-2xl border bg-card/60 p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-lg">
+      <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-b from-primary/10 via-transparent to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-primary/15 text-primary ring-1 ring-primary/30">
         {icon}
       </div>
-      <h3 className="font-semibold">{title}</h3>
+      <h3 className="text-lg font-semibold">{title}</h3>
       <p className="mt-1 text-sm text-muted-foreground">{desc}</p>
     </div>
   );
