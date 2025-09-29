@@ -64,7 +64,7 @@ export default function Index() {
         tags: ["Group", "Tours"],
       },
       {
-        title: "Caravan",
+        title: "Van",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F3283cd5bb6c74cb1b15166afab8a4e68?format=webp&width=800",
         category: "van",
@@ -72,7 +72,7 @@ export default function Index() {
         tags: ["Group", "Tours"],
       },
       {
-        title: "Mazda Van",
+        title: "Mini Van",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F558d62c84be2428ba7ad67c8649f60a8?format=webp&width=800",
         category: "van",
@@ -104,7 +104,7 @@ export default function Index() {
         tags: ["Events", "Corporate"],
       },
       {
-        title: "Tour Coach",
+        title: "Bus",
         image:
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fab759887ccd440d68814445782e31958?format=webp&width=800",
         category: "bus",
