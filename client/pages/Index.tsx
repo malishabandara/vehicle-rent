@@ -530,7 +530,9 @@ export default function Index() {
                 </p>
               </div>
               <a
-                href="#"
+                href="https://wa.me/94718885557?text=Hello%20CNS%20Travels"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-md border px-4 py-2 text-sm"
               >
                 WhatsApp
