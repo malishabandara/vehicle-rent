@@ -34,7 +34,7 @@ export default function Index() {
   const [error, setError] = useState<string>("");
   const [waOpen, setWaOpen] = useState(false);
   const [category, setCategory] = useState<"car" | "van" | "bus" | "lorry">(
-    "car",
+    "lorry",
   );
 
   useEffect(() => {
@@ -48,23 +48,23 @@ export default function Index() {
       {
         title: "Nano Car",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F41ff4124f72b435790cc5813d0a951c0?format=webp&width=800",
+          "./nano car.png",
         category: "car",
-        specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
+        specs: { seats: "3-4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Adventure"],
       },
       {
         title: "Mini Car",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F41ff4124f72b435790cc5813d0a951c0?format=webp&width=800",
+          "./mini car.png",
         category: "car",
-        specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
+        specs: { seats: "3-4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Adventure"],
       },
       {
         title: "Wagon R",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F41ff4124f72b435790cc5813d0a951c0?format=webp&width=800",
+          "./wagon.png",
         category: "car",
         specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
         tags: ["Adventure"],
@@ -72,7 +72,7 @@ export default function Index() {
       {
         title: "Sedan Car",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F3f1bf1fbc3d84dcb90fa5ec8eec33228?format=webp&width=800",
+          "./sedan car.png",
         category: "car",
         specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Airport", "City Ride"],
@@ -80,7 +80,7 @@ export default function Index() {
       {
         title: "Luxury Car",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F9f7568129cbd4162baa5a67db6dd49aa?format=webp&width=800",
+          "./luxury car.png",
         category: "car",
         specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Business", "Premium"],
@@ -88,9 +88,9 @@ export default function Index() {
       {
         title: "Mini Van",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F558d62c84be2428ba7ad67c8649f60a8?format=webp&width=800",
+          "./mini van.png",
         category: "van",
-        specs: { seats: "10-15 Passengers", ac: true, transmission: "Manual" },
+        specs: { seats: "6-8 Passengers", ac: true, transmission: "Manual" },
         tags: ["Group", "Tours"],
       },
       {
@@ -128,15 +128,15 @@ export default function Index() {
       {
         title: "Bus",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2F696ec1a1456b40aa8360bef1d0c9a933?format=webp&width=800",
+          "./bus.png",
         category: "bus",
-        specs: { seats: "20-30 Passengers", ac: true, transmission: "Manual" },
+        specs: { seats: "40-50 Passengers", ac: true, transmission: "Manual" },
         tags: ["Events", "Corporate"],
       },
       {
         title: "AC Bus",
         image:
-          "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fab759887ccd440d68814445782e31958?format=webp&width=800",
+          "./ac bus.png",
         category: "bus",
         specs: { seats: "40+ Passengers", ac: true, transmission: "Manual" },
         tags: ["Long Trips", "Comfort"],
@@ -174,7 +174,7 @@ export default function Index() {
         category: "lorry",
         specs: {
           seats: "Crew 2",
-          ac: false,
+          ac: true,
           transmission: "Manual",
           luggage: "Moves",
         },
@@ -187,7 +187,7 @@ export default function Index() {
         category: "lorry",
         specs: {
           seats: "Crew 2",
-          ac: false,
+          ac: true,
           transmission: "Manual",
           luggage: "Moves",
         },
@@ -200,7 +200,7 @@ export default function Index() {
         category: "lorry",
         specs: {
           seats: "Crew 2",
-          ac: false,
+          ac: true,
           transmission: "Manual",
           luggage: "Moves",
         },
@@ -213,7 +213,7 @@ export default function Index() {
         category: "lorry",
         specs: {
           seats: "Crew 2",
-          ac: false,
+          ac: true,
           transmission: "Manual",
           luggage: "Moves",
         },
@@ -226,7 +226,7 @@ export default function Index() {
         category: "lorry",
         specs: {
           seats: "Crew 2",
-          ac: false,
+          ac: true,
           transmission: "Manual",
           luggage: "Moves",
         },
@@ -239,7 +239,7 @@ export default function Index() {
         category: "lorry",
         specs: {
           seats: "Crew 2",
-          ac: false,
+          ac: true,
           transmission: "Manual",
           luggage: "Moves",
         },
