@@ -732,7 +732,7 @@ function WhatsAppForm({
       </div>
       <div className="flex justify-end">
         <Button type="submit" className="btn-gradient text-primary-foreground">
-          Send Message
+          Book Now
         </Button>
       </div>
     </form>
@@ -867,7 +867,7 @@ function ContactForm({ selectedVehicle }: { selectedVehicle: string }) {
       </div>
       <div className="mt-6 flex flex-wrap gap-3">
         <Button type="submit" className="btn-gradient text-primary-foreground">
-          Send Message
+          Book Now
         </Button>
         <a
           href="#home"
