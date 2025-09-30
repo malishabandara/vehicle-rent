@@ -174,7 +174,7 @@ export default function Index() {
         category: "lorry",
         specs: {
           seats: "Crew 2",
-          ac: true,false,
+          ac: true,
           transmission: "Manual",
           luggage: "Moves",
         },
