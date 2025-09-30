@@ -282,7 +282,7 @@ export default function Index() {
       <section className="relative section pt-24" id="home">
         <div className="absolute inset-0 -z-10">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fab759887ccd440d68814445782e31958?format=webp&width=800"
+            src="./hero.png"
             alt="Driver in car"
             className="h-full w-full object-cover"
           />
@@ -484,7 +484,7 @@ export default function Index() {
           </div>
           <div className="order-1 md:order-2">
             <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F17c7b7d3249040d5b2a0a3b0be9c9a63%2F617bf586c7094aa59523e178358655af?format=webp&width=800"
+              src="./all.jpg"
               alt="CNS Travels — cars for rent"
               className="w-full rounded-xl drop-shadow-2xl"
               loading="lazy"
