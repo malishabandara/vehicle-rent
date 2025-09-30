@@ -539,7 +539,7 @@ export default function Index() {
               </a>
               <div className="mt-4">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.7726645765065!2d80.6209131747643!3d7.4903348111740495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae345397239096b%3A0x511720e6cd0fbb12!2sChanaka%20Inn!5e0!3m2!1sen!2slk!4v1759126780369!5m2!1sen!2slk"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3959.3456241357053!2d80.03346252441406!3d7.085872173309326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fd62cad1412f%3A0x2ebb31b208a8c08d!2sYakkala%20Clocktower!5e0!3m2!1sen!2slk!4v1759202706740!5m2!1sen!2slk"
                   width="400"
                   height="300"
                   style={{ border: 0 }}
