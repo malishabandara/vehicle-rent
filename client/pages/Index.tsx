@@ -147,7 +147,7 @@ export default function Index() {
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fbf9d0a36a1304cbd80656e8dce43ba53?format=webp&width=800",
         category: "lorry",
         specs: {
-          seats: "Crew 2",
+          seats: "Crew 1",
           ac: false,
           transmission: "Manual",
           luggage: "Moves",
@@ -160,7 +160,7 @@ export default function Index() {
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fbd57c45c6ad9424c9c09bb3ede428858?format=webp&width=800",
         category: "lorry",
         specs: {
-          seats: "Crew 2",
+          seats: "Crew 1",
           ac: false,
           transmission: "Manual",
           luggage: "Moves",
@@ -174,7 +174,7 @@ export default function Index() {
         category: "lorry",
         specs: {
           seats: "Crew 2",
-          ac: true,
+          ac: true,false,
           transmission: "Manual",
           luggage: "Moves",
         },
