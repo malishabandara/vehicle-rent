@@ -34,7 +34,7 @@ export default function Index() {
   const [error, setError] = useState<string>("");
   const [waOpen, setWaOpen] = useState(false);
   const [category, setCategory] = useState<"car" | "van" | "bus" | "lorry">(
-    "lorry",
+    "car",
   );
 
   useEffect(() => {
@@ -47,48 +47,42 @@ export default function Index() {
     () => [
       {
         title: "Nano Car",
-        image:
-          "./nano car.png",
+        image: "./nano car.png",
         category: "car",
         specs: { seats: "3-4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Adventure"],
       },
       {
         title: "Mini Car",
-        image:
-          "./mini car.png",
+        image: "./mini car.png",
         category: "car",
         specs: { seats: "3-4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Adventure"],
       },
       {
         title: "Wagon R",
-        image:
-          "./wagon.png",
+        image: "./wagon.png",
         category: "car",
         specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
         tags: ["Adventure"],
       },
       {
         title: "Sedan Car",
-        image:
-          "./sedan car.png",
+        image: "./sedan car.png",
         category: "car",
         specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Airport", "City Ride"],
       },
       {
         title: "Luxury Car",
-        image:
-          "./luxury car.png",
+        image: "./luxury car.png",
         category: "car",
         specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Business", "Premium"],
       },
       {
         title: "Mini Van",
-        image:
-          "./mini van.png",
+        image: "./mini van.png",
         category: "van",
         specs: { seats: "6-8 Passengers", ac: true, transmission: "Manual" },
         tags: ["Group", "Tours"],
@@ -127,16 +121,14 @@ export default function Index() {
       },
       {
         title: "Bus",
-        image:
-          "./bus.png",
+        image: "./bus.png",
         category: "bus",
         specs: { seats: "40-50 Passengers", ac: true, transmission: "Manual" },
         tags: ["Events", "Corporate"],
       },
       {
         title: "AC Bus",
-        image:
-          "./ac bus.png",
+        image: "./ac bus.png",
         category: "bus",
         specs: { seats: "40+ Passengers", ac: true, transmission: "Manual" },
         tags: ["Long Trips", "Comfort"],
@@ -147,7 +139,7 @@ export default function Index() {
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fbf9d0a36a1304cbd80656e8dce43ba53?format=webp&width=800",
         category: "lorry",
         specs: {
-          seats: "Crew 2",
+          seats: "Crew 1",
           ac: false,
           transmission: "Manual",
           luggage: "Moves",
@@ -160,7 +152,7 @@ export default function Index() {
           "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fbd57c45c6ad9424c9c09bb3ede428858?format=webp&width=800",
         category: "lorry",
         specs: {
-          seats: "Crew 2",
+          seats: "Crew 1",
           ac: false,
           transmission: "Manual",
           luggage: "Moves",
@@ -361,10 +353,10 @@ export default function Index() {
           <div className="mb-6 flex flex-wrap gap-3">
             {(
               [
-                { key: "lorry", label: "Lorries" },
-                { key: "van", label: "Vans" },
                 { key: "car", label: "Cars" },
+                { key: "van", label: "Vans" },
                 { key: "bus", label: "Buses" },
+                { key: "lorry", label: "Lorries" },
               ] as const
             ).map((c) => (
               <button
@@ -523,10 +515,25 @@ export default function Index() {
               </p>
               <div className="space-y-3 text-sm not-italic">
                 <p className="flex items-center gap-2">
-                  <PhoneCall className="h-4 w-4 text-primary" /> +94 71 888 5557
+                  <svg
+                    className="h-4 w-4 text-primary"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M20.52 3.48A11.51 11.51 0 0012 0a11.52 11.52 0 00-10 17.46L0 24l6.72-1.76A11.5 11.5 0 0012 23.5a11.5 11.5 0 008.52-20.02zM12 21a9 9 0 01-4.61-1.27l-.33-.2-3.96 1.04 1.06-3.86-.22-.35A9 9 0 1112 21zm5.06-6.68c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.16-1.34-.8-.71-1.34-1.58-1.5-1.85-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.46h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.83.14.18 1.93 2.95 4.67 4.13.65.28 1.16.45 1.55.58.65.21 1.24.18 1.71.11.52-.08 1.58-.64 1.8-1.26.22-.62.22-1.15.16-1.26-.07-.11-.25-.18-.52-.32z"
+                    />
+                  </svg>
+                  +94 71 888 5557
                 </p>
                 <p className="flex items-center gap-2">
-                  <Mail className="h-4 w-4 text-primary" /> info@cnstravels.lk
+                  <PhoneCall className="h-4 w-4 text-primary" /> +94 77 719 7273
+                </p>
+                <p className="flex items-center gap-2">
+                  <Mail className="h-4 w-4 text-primary" />{" "}
+                  cnstravels5@gmail.com
                 </p>
               </div>
               <a
@@ -539,7 +546,7 @@ export default function Index() {
               </a>
               <div className="mt-4">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.7726645765065!2d80.6209131747643!3d7.4903348111740495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae345397239096b%3A0x511720e6cd0fbb12!2sChanaka%20Inn!5e0!3m2!1sen!2slk!4v1759126780369!5m2!1sen!2slk"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3959.3456241357053!2d80.03346252441406!3d7.085872173309326!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2fd62cad1412f%3A0x2ebb31b208a8c08d!2sYakkala%20Clocktower!5e0!3m2!1sen!2slk!4v1759202706740!5m2!1sen!2slk"
                   width="400"
                   height="300"
                   style={{ border: 0 }}
@@ -732,7 +739,7 @@ function WhatsAppForm({
       </div>
       <div className="flex justify-end">
         <Button type="submit" className="btn-gradient text-primary-foreground">
-          Send Message
+          Book Now
         </Button>
       </div>
     </form>
@@ -867,7 +874,7 @@ function ContactForm({ selectedVehicle }: { selectedVehicle: string }) {
       </div>
       <div className="mt-6 flex flex-wrap gap-3">
         <Button type="submit" className="btn-gradient text-primary-foreground">
-          Send Message
+          Book Now
         </Button>
         <a
           href="#home"
