@@ -34,7 +34,7 @@ export default function Index() {
   const [error, setError] = useState<string>("");
   const [waOpen, setWaOpen] = useState(false);
   const [category, setCategory] = useState<"car" | "van" | "bus" | "lorry">(
-    "lorry",
+    "car",
   );
 
   useEffect(() => {
@@ -361,10 +361,10 @@ export default function Index() {
           <div className="mb-6 flex flex-wrap gap-3">
             {(
               [
-                { key: "lorry", label: "Lorries" },
-                { key: "van", label: "Vans" },
                 { key: "car", label: "Cars" },
+                { key: "van", label: "Vans" },
                 { key: "bus", label: "Buses" },
+                { key: "lorry", label: "Lorries" },
               ] as const
             ).map((c) => (
               <button
