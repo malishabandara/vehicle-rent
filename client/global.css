@@ -1,4 +1,5 @@
 /** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap");
 
 @tailwind base;
@@ -117,6 +118,23 @@
       #ffd000 40%,
       #ffb000 100%
     );
+  }
+  .font-brand {
+    font-family:
+      "Poppins",
+      Inter,
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      "Segoe UI",
+      Roboto,
+      "Helvetica Neue",
+      Arial,
+      "Noto Sans",
+      "Apple Color Emoji",
+      "Segoe UI Emoji",
+      "Segoe UI Symbol",
+      "Noto Color Emoji";
   }
   .section {
     @apply py-16 md:py-24;
