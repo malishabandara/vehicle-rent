@@ -47,48 +47,42 @@ export default function Index() {
     () => [
       {
         title: "Nano Car",
-        image:
-          "./nano car.png",
+        image: "./nano car.png",
         category: "car",
         specs: { seats: "3-4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Adventure"],
       },
       {
         title: "Mini Car",
-        image:
-          "./mini car.png",
+        image: "./mini car.png",
         category: "car",
         specs: { seats: "3-4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Adventure"],
       },
       {
         title: "Wagon R",
-        image:
-          "./wagon.png",
+        image: "./wagon.png",
         category: "car",
         specs: { seats: "4-5 Passengers", ac: true, transmission: "Auto" },
         tags: ["Adventure"],
       },
       {
         title: "Sedan Car",
-        image:
-          "./sedan car.png",
+        image: "./sedan car.png",
         category: "car",
         specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Airport", "City Ride"],
       },
       {
         title: "Luxury Car",
-        image:
-          "./luxury car.png",
+        image: "./luxury car.png",
         category: "car",
         specs: { seats: "4 Passengers", ac: true, transmission: "Auto" },
         tags: ["Business", "Premium"],
       },
       {
         title: "Mini Van",
-        image:
-          "./mini van.png",
+        image: "./mini van.png",
         category: "van",
         specs: { seats: "6-8 Passengers", ac: true, transmission: "Manual" },
         tags: ["Group", "Tours"],
@@ -127,16 +121,14 @@ export default function Index() {
       },
       {
         title: "Bus",
-        image:
-          "./bus.png",
+        image: "./bus.png",
         category: "bus",
         specs: { seats: "40-50 Passengers", ac: true, transmission: "Manual" },
         tags: ["Events", "Corporate"],
       },
       {
         title: "AC Bus",
-        image:
-          "./ac bus.png",
+        image: "./ac bus.png",
         category: "bus",
         specs: { seats: "40+ Passengers", ac: true, transmission: "Manual" },
         tags: ["Long Trips", "Comfort"],
@@ -523,8 +515,16 @@ export default function Index() {
               </p>
               <div className="space-y-3 text-sm not-italic">
                 <p className="flex items-center gap-2">
-                  <svg className="h-4 w-4 text-primary" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path fill="currentColor" d="M20.52 3.48A11.51 11.51 0 0012 0a11.52 11.52 0 00-10 17.46L0 24l6.72-1.76A11.5 11.5 0 0012 23.5a11.5 11.5 0 008.52-20.02zM12 21a9 9 0 01-4.61-1.27l-.33-.2-3.96 1.04 1.06-3.86-.22-.35A9 9 0 1112 21zm5.06-6.68c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.16-1.34-.8-.71-1.34-1.58-1.5-1.85-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.46h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.83.14.18 1.93 2.95 4.67 4.13.65.28 1.16.45 1.55.58.65.21 1.24.18 1.71.11.52-.08 1.58-.64 1.8-1.26.22-.62.22-1.15.16-1.26-.07-.11-.25-.18-.52-.32z"/>
+                  <svg
+                    className="h-4 w-4 text-primary"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    focusable="false"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M20.52 3.48A11.51 11.51 0 0012 0a11.52 11.52 0 00-10 17.46L0 24l6.72-1.76A11.5 11.5 0 0012 23.5a11.5 11.5 0 008.52-20.02zM12 21a9 9 0 01-4.61-1.27l-.33-.2-3.96 1.04 1.06-3.86-.22-.35A9 9 0 1112 21zm5.06-6.68c-.28-.14-1.65-.81-1.9-.9-.25-.09-.43-.14-.61.14-.18.27-.7.87-.86 1.05-.16.18-.32.2-.59.07-.27-.14-1.13-.42-2.16-1.34-.8-.71-1.34-1.58-1.5-1.85-.16-.27-.02-.42.12-.55.12-.12.27-.32.41-.48.14-.16.18-.27.27-.45.09-.18.05-.34-.02-.48-.07-.14-.61-1.47-.84-2.01-.22-.53-.45-.46-.61-.46h-.52c-.18 0-.48.07-.73.34-.25.27-.96.94-.96 2.29 0 1.35.98 2.65 1.12 2.83.14.18 1.93 2.95 4.67 4.13.65.28 1.16.45 1.55.58.65.21 1.24.18 1.71.11.52-.08 1.58-.64 1.8-1.26.22-.62.22-1.15.16-1.26-.07-.11-.25-.18-.52-.32z"
+                    />
                   </svg>
                   +94 71 888 5557
                 </p>
@@ -532,7 +532,8 @@ export default function Index() {
                   <PhoneCall className="h-4 w-4 text-primary" /> +94 77 719 7273
                 </p>
                 <p className="flex items-center gap-2">
-                  <Mail className="h-4 w-4 text-primary" /> cnstravels5@gmail.com
+                  <Mail className="h-4 w-4 text-primary" />{" "}
+                  cnstravels5@gmail.com
                 </p>
               </div>
               <a

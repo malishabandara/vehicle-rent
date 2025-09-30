@@ -70,7 +70,9 @@ export default function Header() {
             alt="CNS Travels"
             className="h-16 w-auto object-contain drop-shadow"
           />
-          <span className="font-brand text-primary font-extrabold text-xl md:text-2xl tracking-wide drop-shadow-sm">CNS Travels</span>
+          <span className="font-brand text-primary font-extrabold text-xl md:text-2xl tracking-wide drop-shadow-sm">
+            CNS Travels
+          </span>
         </a>
 
         <nav className="hidden md:block">
