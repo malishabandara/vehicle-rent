@@ -74,7 +74,7 @@ export default function Footer() {
             </a>
             <a
               className="inline-flex h-9 w-9 items-center justify-center rounded-md border hover:bg-muted"
-              href="#"
+              href="https://t.me/cnstravels"
               aria-label="Telegram"
             >
               <Send className="h-4 w-4" />
