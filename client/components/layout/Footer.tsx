@@ -60,7 +60,7 @@ export default function Footer() {
           <div className="flex gap-3">
             <a
               className="inline-flex h-9 w-9 items-center justify-center rounded-md border hover:bg-muted"
-              href="#"
+              href="https://www.facebook.com/share/19gSu6cyQr/"
               aria-label="Facebook"
             >
               <Facebook className="h-4 w-4" />
