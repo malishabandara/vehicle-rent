@@ -65,7 +65,10 @@ function Stars({ rating }: { rating: number }) {
 
 export default function ReviewsSection() {
   return (
-    <section className="section border-y bg-gradient-to-b from-background to-secondary/30" id="reviews">
+    <section
+      className="section border-y bg-gradient-to-b from-background to-secondary/30"
+      id="reviews"
+    >
       <div className="container-tight">
         <div className="mb-8 flex items-end justify-between gap-6">
           <div>
@@ -86,17 +89,24 @@ export default function ReviewsSection() {
                   <div className="flex items-center gap-2">
                     <h3 className="font-semibold">{r.name}</h3>
                     <span className="inline-flex items-center gap-1 rounded-full bg-primary/15 px-2 py-0.5 text-[10px] font-medium text-primary ring-1 ring-primary/30">
-                      <CheckCircle2 className="h-3.5 w-3.5" aria-hidden="true" />
+                      <CheckCircle2
+                        className="h-3.5 w-3.5"
+                        aria-hidden="true"
+                      />
                       Verified
                     </span>
                   </div>
                   {r.location ? (
-                    <p className="text-xs text-muted-foreground mt-0.5">{r.location}</p>
+                    <p className="text-xs text-muted-foreground mt-0.5">
+                      {r.location}
+                    </p>
                   ) : null}
                 </div>
                 <Stars rating={r.rating} />
               </div>
-              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">“{r.comment}”</p>
+              <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
+                “{r.comment}”
+              </p>
             </article>
           ))}
         </div>
