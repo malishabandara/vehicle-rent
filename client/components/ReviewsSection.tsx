@@ -9,7 +9,7 @@ type Review = {
 
 const reviews: Review[] = [
   {
-    name: "Naveen Perera",
+    name: "Isuru Lakmal",
     rating: 5,
     comment:
       "Excellent service! Driver was punctual and the car was in great condition. Highly recommended.",
@@ -23,7 +23,7 @@ const reviews: Review[] = [
     location: "Negombo",
   },
   {
-    name: "Tharindu Jay",
+    name: "Chamindu Lakshan",
     rating: 4,
     comment:
       "Clean van and friendly driver. Our family trip around Kandy was very comfortable.",
@@ -44,7 +44,7 @@ const reviews: Review[] = [
     location: "Matara",
   },
   {
-    name: "Rashmi D.",
+    name: "Malisha Bandara",
     rating: 4,
     comment:
       "Easy WhatsApp booking and quick confirmation. Car was comfortable for long distance.",
