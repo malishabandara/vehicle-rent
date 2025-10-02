@@ -451,7 +451,7 @@ export default function Index() {
                   className="h-4 w-4 text-primary"
                   aria-hidden="true"
                 />{" "}
-                Clean, air���conditioned vehicles
+                Clean, air conditioned vehicles
               </li>
               <li className="flex items-center gap-2">
                 <CheckCircle2
