@@ -25,6 +25,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import type { ContactRequest, ContactResponse } from "@shared/api";
+import ReviewsSection from "@/components/ReviewsSection";
 
 export default function Index() {
   const [selectedVehicle, setSelectedVehicle] = useState<string>("");
@@ -450,7 +451,7 @@ export default function Index() {
                   className="h-4 w-4 text-primary"
                   aria-hidden="true"
                 />{" "}
-                Clean, air‑conditioned vehicles
+                Clean, air���conditioned vehicles
               </li>
               <li className="flex items-center gap-2">
                 <CheckCircle2
@@ -493,6 +494,8 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      <ReviewsSection />
 
       {/* Contact */}
       <section className="section border-t" id="contact">
