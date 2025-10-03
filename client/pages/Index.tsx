@@ -685,14 +685,26 @@ function WhatsAppForm({
             className="h-11 w-full rounded-md border bg-background px-3 outline-none ring-offset-background focus:ring-2 focus:ring-primary"
           >
             <option value="">Select vehicle</option>
+            <option>Nano Car</option>
+            <option>Mini Car</option>
+            <option>Wagon R</option>
             <option>Sedan Car</option>
             <option>Luxury Car</option>
-            <option>Passenger Van</option>
-            <option>Mini Bus</option>
-            <option>Tour Coach</option>
-            <option>Box Lorry</option>
-            <option>Flatbed Truck</option>
-            <option>Double Cab</option>
+            <option>Mini Van</option>
+            <option>Non AC Van</option>
+            <option>AC Van</option>
+            <option>KDH Flat Roof</option>
+            <option>KDH High Roof</option>
+            <option>Bus</option>
+            <option>AC Bus</option>
+            <option>Dimo Batta 7ft</option>
+            <option>Dimo lokka 8.5ft</option>
+            <option>Lorry 10.5ft</option>
+            <option>Lorry 12.5ft</option>
+            <option>Lorry 14.5 ft</option>
+            <option>Lorry 16.5ft</option>
+            <option>Lorry 18.5 ft</option>
+            <option>Lorry 20ft</option>
           </select>
         </Field>
         <Field label="Pickup Location">
