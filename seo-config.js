@@ -94,7 +94,7 @@ export const seoConfig = {
     siteName: "CNS Travels",
     title: "CNS Travels | Car, Van, Bus, Dimo Batta & Lorry Hire Sri Lanka",
     description: "Affordable car, van, bus and lorry hire in Sri Lanka. Airport transfers, tours and logistics. Dimo Batta, box lorry, KDH vans and more.",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fab759887ccd440d68814445782e31958?format=webp&width=1200",
+    image: "https://www.cnstravels.com/logo.jpeg",
     locale: "en_US"
   },
   
@@ -103,7 +103,7 @@ export const seoConfig = {
     card: "summary_large_image",
     title: "CNS Travels | Car, Van, Bus, Dimo Batta & Lorry Hire Sri Lanka",
     description: "Affordable vehicle hire in Sri Lanka: cars, vans, buses, lorries, Dimo Batta. Airport pickup, tours and logistics.",
-    image: "https://cdn.builder.io/api/v1/image/assets%2F59c2f306d6f4441883078c4e59f5f358%2Fab759887ccd440d68814445782e31958?format=webp&width=1200",
+    image: "https://www.cnstravels.com/logo.jpeg",
     creator: "@CNSTravels",
     site: "@CNSTravels"
   },
