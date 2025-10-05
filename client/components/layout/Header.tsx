@@ -66,7 +66,7 @@ export default function Header() {
       <div className="container-tight flex h-16 items-center justify-between">
         <a href="/" className="flex items-center gap-3">
           <img
-            src="https://cdn.builder.io/api/v1/image/assets%2F17c7b7d3249040d5b2a0a3b0be9c9a63%2F67d24b086652452db60b0b810825cce3?format=webp&width=256"
+            src="/logo.jpeg"
             alt="CNS Travels"
             className="h-16 w-auto object-contain drop-shadow"
           />
