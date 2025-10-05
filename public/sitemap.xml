@@ -12,31 +12,4 @@
       <image:caption>Professional vehicle hire service in Sri Lanka</image:caption>
     </image:image>
   </url>
-  
-  <!-- Vehicle Category Pages (Virtual) -->
-  <url>
-          <loc>https://www.cnstravels.com/fleet</loc>
-          <lastmod>2024-01-30</lastmod>
-          <changefreq>monthly</changefreq>
-          <priority>0.9</priority>
-        </url>
-        <url>
-          <loc>https://www.cnstravels.com/services</loc>
-          <lastmod>2024-01-30</lastmod>
-          <changefreq>monthly</changefreq>
-          <priority>0.8</priority>
-        </url>
-        <url>
-          <loc>https://www.cnstravels.com/about</loc>
-          <lastmod>2024-01-30</lastmod>
-          <changefreq>monthly</changefreq>
-          <priority>0.7</priority>
-        </url>
-        <url>
-          <loc>https://www.cnstravels.com/contact</loc>
-          <lastmod>2024-01-30</lastmod>
-          <changefreq>monthly</changefreq>
-          <priority>0.8</priority>
-        </url>
-
 </urlset>
