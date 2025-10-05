@@ -293,12 +293,10 @@ export default function Index() {
         <div className="container-tight grid items-center gap-10 lg:grid-cols-2">
           <div>
             <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
-              Your Trusted Wheels for Every Journey
+              Professional Vehicle Hire Service in Sri Lanka - Cars, Vans, Buses & Lorries
             </h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-xl">
-              CNS Travels provides reliable cars, vans, buses and lorries with
-              professional drivers. Airport transfers, tours and logistics —
-              wherever you go in Sri Lanka.
+              CNS Travels is Sri Lanka's trusted vehicle hire service, offering reliable car rental, van hire, bus hire and lorry hire with professional drivers. Specializing in airport transfers, group tours, corporate transport and logistics solutions across Sri Lanka.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#fleet">
@@ -344,10 +342,10 @@ export default function Index() {
           <div className="mb-10 flex items-end justify-between gap-6">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold">
-                Choose Your Perfect Ride
+                Choose Your Perfect Vehicle - Car Hire, Van Hire, Bus Hire & Lorry Hire
               </h2>
               <p className="text-muted-foreground mt-2">
-                Cars, vans, buses and lorries — maintained and ready.
+                Explore our comprehensive fleet of well-maintained vehicles including economy cars, luxury vehicles, passenger vans, buses and cargo lorries. All vehicles are regularly serviced and ready for hire.
               </p>
             </div>
           </div>
@@ -438,12 +436,10 @@ export default function Index() {
               transport partner
             </span>
             <h2 className="mt-3 text-3xl md:text-4xl font-bold">
-              About CNS Travels
+              About CNS Travels - Sri Lanka's Premier Vehicle Hire Service
             </h2>
             <p className="mt-4 text-base md:text-lg text-muted-foreground">
-              We are a customer‑first transport partner with a well‑maintained
-              fleet and experienced drivers. From quick city rides to multi‑day
-              tours, we focus on comfort, safety, and transparent pricing.
+              CNS Travels is Sri Lanka's leading vehicle hire company, providing comprehensive car rental, van hire, bus hire and lorry hire services. As a customer-first transport partner with a well-maintained fleet and experienced drivers, we specialize in airport transfers, group tours, corporate transport and logistics solutions. From quick city rides to multi-day tours, we focus on comfort, safety, and transparent pricing across Sri Lanka.
             </p>
             <ul className="mt-6 grid gap-3 text-sm">
               <li className="flex items-center gap-2">
@@ -497,15 +493,61 @@ export default function Index() {
 
       <ReviewsSection />
 
+      {/* SEO Content Section */}
+      <section className="section border-y bg-gradient-to-b from-background to-secondary/20">
+        <div className="container-tight">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">
+            Why Choose CNS Travels for Vehicle Hire in Sri Lanka?
+          </h2>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold">Affordable Vehicle Hire Rates</h3>
+              <p className="text-muted-foreground">
+                Get the best car hire prices in Sri Lanka with transparent pricing. No hidden charges for our car rental, van hire, bus hire and lorry hire services.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold">24/7 Vehicle Hire Service</h3>
+              <p className="text-muted-foreground">
+                Round-the-clock vehicle hire availability across Sri Lanka. Emergency car hire, airport pickup, and last-minute van hire bookings always available.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold">Professional Drivers</h3>
+              <p className="text-muted-foreground">
+                Experienced, licensed drivers for all vehicle hire services. Safe and reliable chauffeur service for car hire, van hire and bus hire across Sri Lanka.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold">Islandwide Coverage</h3>
+              <p className="text-muted-foreground">
+                Vehicle hire service available in Colombo, Kandy, Galle, Nuwara Eliya, Ella, Sigiriya and all major cities in Sri Lanka.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold">Well-Maintained Fleet</h3>
+              <p className="text-muted-foreground">
+                Modern, air-conditioned vehicles for car hire, van hire, bus hire and lorry hire. Regular maintenance ensures comfort and reliability.
+              </p>
+            </div>
+            <div className="space-y-4">
+              <h3 className="text-xl font-semibold">Flexible Booking</h3>
+              <p className="text-muted-foreground">
+                Easy online booking for vehicle hire services. Instant quotes for car rental, van hire, bus hire and lorry hire with flexible payment options.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact */}
       <section className="section border-t" id="contact">
         <div className="container-tight">
           <h2 className="text-3xl md:text-4xl font-bold">
-            Your Journey Starts Here
+            Book Your Vehicle Hire - Get Instant Quote for Car Rental, Van Hire, Bus Hire & Lorry Hire
           </h2>
           <p className="mt-2 text-muted-foreground max-w-2xl">
-            Tell us your travel dates and preferences. We will respond promptly
-            with a tailored quote.
+            Ready to hire a vehicle in Sri Lanka? Tell us your travel dates, pickup location, and vehicle preferences. Our team will respond promptly with a customized quote for car hire, van hire, bus hire or lorry hire services.
           </p>
           <div className="mt-10 grid gap-8 md:grid-cols-3">
             <div className="md:col-span-2">
