@@ -56,3 +56,9 @@ Allow: /favicon.ico
 Allow: /robots.txt
 Allow: /sitemap.xml
 
+# Allow all images for better indexing
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.webp
+Allow: /*.svg

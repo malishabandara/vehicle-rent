@@ -3,6 +3,7 @@ import express from "express";
 import cors from "cors";
 import { handleDemo } from "./routes/demo";
 import { handleContact } from "./routes/contact";
+import { handleSEO, serveIndexWithSEO } from "./seo-routes";
 
 export function createServer() {
   const app = express();
@@ -20,6 +21,13 @@ export function createServer() {
 
   app.get("/api/demo", handleDemo);
   app.post("/api/contact", handleContact);
+  app.get("/api/seo", handleSEO);
+
+  // Serve static files
+  app.use(express.static('public'));
+
+  // Handle all routes for SPA
+  app.get('*', serveIndexWithSEO);
 
   return app;
 }
