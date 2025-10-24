@@ -29,7 +29,7 @@ export default function VehicleCard({
         <div className="absolute inset-0 flex items-center justify-center p-3 md:p-4">
           <img
             src={v.image}
-            alt={v.title}
+            alt={`${v.title} hire Sri Lanka - Professional vehicle rental service CNS Travels`}
             className="max-h-full max-w-full object-contain drop-shadow-xl transition-transform duration-500 group-hover:scale-[1.03]"
             loading="lazy"
             decoding="async"

@@ -8,8 +8,13 @@
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.cnstravels.com/logo.jpeg</image:loc>
-      <image:title>CNS Travels Vehicle Hire Service</image:title>
-      <image:caption>Professional vehicle hire service in Sri Lanka</image:caption>
+      <image:title>CNS Travels Car Rental Sri Lanka - Vehicle Hire Service</image:title>
+      <image:caption>Professional car rental and vehicle hire service in Sri Lanka</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.cnstravels.com/all.jpg</image:loc>
+      <image:title>CNS Travels Vehicle Fleet - Car Rental Sri Lanka</image:title>
+      <image:caption>Comprehensive vehicle fleet for car rental Sri Lanka service</image:caption>
     </image:image>
   </url>
   
@@ -59,6 +64,56 @@
   
   <url>
     <loc>https://www.cnstravels.com/#contact</loc>
+    <lastmod>2024-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Vehicle-specific pages (Virtual) -->
+  <url>
+    <loc>https://www.cnstravels.com/#fleet?vehicle=nano-car</loc>
+    <lastmod>2024-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cnstravels.com/#fleet?vehicle=mini-car</loc>
+    <lastmod>2024-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cnstravels.com/#fleet?vehicle=sedan-car</loc>
+    <lastmod>2024-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cnstravels.com/#fleet?vehicle=luxury-car</loc>
+    <lastmod>2024-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cnstravels.com/#fleet?vehicle=mini-van</loc>
+    <lastmod>2024-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cnstravels.com/#fleet?vehicle=ac-bus</loc>
+    <lastmod>2024-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.cnstravels.com/#fleet?vehicle=dimo-batta</loc>
     <lastmod>2024-01-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
