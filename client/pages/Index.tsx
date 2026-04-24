@@ -296,7 +296,11 @@ export default function Index() {
               #1 Vehicle Hire Sri Lanka - Professional Drivers, 24/7 Service
             </h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-xl">
-              CNS Travels is Sri Lanka's leading vehicle hire service, offering affordable car hire, van hire, bus hire and lorry hire with professional drivers. Specializing in airport transfers, group tours, corporate transport and logistics solutions. Book Nano, Mini, Wagon R, Sedan, Luxury cars, KDH vans, AC buses, Dimo Batta across Sri Lanka.
+              Welcome to CNS Travels, a leading travel and tour company in Sri Lanka specializing in private tours, customized travel packages, and reliable vehicle hire services.
+              We offer a wide range of Sri Lanka tour experiences, including popular destinations such as Ella, Nuwara Eliya, Kandy, Sigiriya, and Galle. Whether you are planning a family vacation, honeymoon, or group tour, CNS Travels provides fully customized Sri Lanka tour packages designed to match your budget and travel preferences.
+              Our professional vehicle hire service in Sri Lanka includes cars, vans, and buses with experienced drivers, ensuring safe, comfortable, and hassle-free travel across the island. We are committed to delivering high-quality service, punctuality, and customer satisfaction for both local and international travelers.
+              Looking for the best tour operator in Sri Lanka or a trusted vehicle rental service? CNS Travels is your one-stop solution for affordable Sri Lanka tours, private chauffeur services, and airport transfers.
+              Book your Sri Lanka journey with CNS Travels today and explore the island with confidence, comfort, and unforgettable memories.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a href="#fleet">
