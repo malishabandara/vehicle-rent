@@ -292,7 +292,7 @@ export default function Index() {
         </div>
         <div className="container-tight grid items-center gap-10 lg:grid-cols-2">
           <div>
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
+            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-center">
               #1 Vehicle Hire Sri Lanka - Professional Drivers, 24/7 Service
             </h1>
             <p className="mt-4 text-lg text-muted-foreground max-w-xl">
