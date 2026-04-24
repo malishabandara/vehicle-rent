@@ -290,52 +290,51 @@ export default function Index() {
           <div className="absolute inset-0 bg-black/70" />
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(255,214,10,.2),transparent_50%)]" />
         </div>
-        <div className="container-tight grid items-center gap-10 lg:grid-cols-2">
-          <div>
-            <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-center">
-              #1 Vehicle Hire Sri Lanka - Professional Drivers, 24/7 Service
-            </h1>
-            <p className="mt-4 text-lg text-muted-foreground max-w-xl">
-              Welcome to CNS Travels, a leading travel and tour company in Sri Lanka specializing in private tours, customized travel packages, and reliable vehicle hire services.
-              We offer a wide range of Sri Lanka tour experiences, including popular destinations such as Ella, Nuwara Eliya, Kandy, Sigiriya, and Galle. Whether you are planning a family vacation, honeymoon, or group tour, CNS Travels provides fully customized Sri Lanka tour packages designed to match your budget and travel preferences.
-              Our professional vehicle hire service in Sri Lanka includes cars, vans, and buses with experienced drivers, ensuring safe, comfortable, and hassle-free travel across the island. We are committed to delivering high-quality service, punctuality, and customer satisfaction for both local and international travelers.
-              Looking for the best tour operator in Sri Lanka or a trusted vehicle rental service? CNS Travels is your one-stop solution for affordable Sri Lanka tours, private chauffeur services, and airport transfers.
-              Book your Sri Lanka journey with CNS Travels today and explore the island with confidence, comfort, and unforgettable memories.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a href="#fleet">
-                <Button
-                  size="lg"
-                  className="btn-gradient text-primary-foreground"
-                >
-                  Browse Fleet
-                </Button>
-              </a>
-              <a href="tel:+94718885557">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-                >
-                  <PhoneCall className="mr-2 h-4 w-4" />
-                  Get a Quote
-                </Button>
-              </a>
+        <div className="container-tight">
+          <h1 className="text-4xl md:text-6xl font-extrabold leading-tight text-center mb-10">
+            #1 Vehicle Hire Sri Lanka - Professional Drivers, 24/7 Service
+          </h1>
+          <div className="grid items-center gap-10 lg:grid-cols-2">
+            <div>
+              <p className="mt-4 text-lg text-muted-foreground max-w-xl">
+                Welcome to CNS Travels, a leading travel and tour company in Sri Lanka specializing in private tours, customized travel packages, and reliable vehicle hire services.
+                We offer a wide range of Sri Lanka tour experiences, including popular destinations such as Ella, Nuwara Eliya, Kandy, Sigiriya, and Galle. Whether you are planning a family vacation, honeymoon, or group tour, CNS Travels provides fully customized Sri Lanka tour packages designed to match your budget and travel preferences.
+                Our professional vehicle hire service in Sri Lanka includes cars, vans, and buses with experienced drivers, ensuring safe, comfortable, and hassle-free travel across the island. We are committed to delivering high-quality service, punctuality, and customer satisfaction for both local and international travelers.
+                Looking for the best tour operator in Sri Lanka or a trusted vehicle rental service? CNS Travels is your one-stop solution for affordable Sri Lanka tours, private chauffeur services, and airport transfers.
+                Book your Sri Lanka journey with CNS Travels today and explore the island with confidence, comfort, and unforgettable memories.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a href="#fleet">
+                  <Button size="lg" className="btn-gradient text-primary-foreground">
+                    Browse Fleet
+                  </Button>
+                </a>
+                <a href="tel:+94718885557">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                  >
+                    <PhoneCall className="mr-2 h-4 w-4" />
+                    Get a Quote
+                  </Button>
+                </a>
+              </div>
+              <div className="mt-8 grid grid-cols-3 gap-6 text-sm">
+                <div className="flex items-center gap-2">
+                  <ShieldCheck className="h-5 w-5 text-primary" /> Insured
+                </div>
+                <div className="flex items-center gap-2">
+                  <Clock4 className="h-5 w-5 text-primary" /> 24/7 Service
+                </div>
+                <div className="flex items-center gap-2">
+                  <Map className="h-5 w-5 text-primary" /> Islandwide
+                </div>
+              </div>
             </div>
-            <div className="mt-8 grid grid-cols-3 gap-6 text-sm">
-              <div className="flex items-center gap-2">
-                <ShieldCheck className="h-5 w-5 text-primary" /> Insured
-              </div>
-              <div className="flex items-center gap-2">
-                <Clock4 className="h-5 w-5 text-primary" /> 24/7 Service
-              </div>
-              <div className="flex items-center gap-2">
-                <Map className="h-5 w-5 text-primary" /> Islandwide
-              </div>
+            <div className="relative">
+              <HeroSlider images={heroImages} />
             </div>
-          </div>
-          <div className="relative">
-            <HeroSlider images={heroImages} />
           </div>
         </div>
       </section>
