@@ -14,15 +14,15 @@ interface SEOData {
 }
 
 const defaultSEO: SEOData = {
-  title: 'CNS Travels | #1 Car Rental & Vehicle Hire Sri Lanka | Nano, Van, Bus, Lorry Hire Colombo Kandy Galle',
-  description: 'Sri Lanka\'s leading vehicle hire service! Affordable car rental, van hire, bus hire & lorry hire. Professional drivers, 24/7 service, islandwide coverage. Book Nano, Mini, Wagon R, Sedan, Luxury cars, KDH vans, AC buses, Dimo Batta. Airport transfers, tours, corporate transport. Serving Colombo, Kandy, Galle, Nuwara Eliya & all Sri Lanka.',
+  title: 'CNS Travels | #1 Vehicle Hire Sri Lanka | Nano, Van, Bus, Lorry Hire Colombo Kandy Galle',
+  description: 'Sri Lanka\'s leading vehicle hire service! Affordable car hire, van hire, bus hire & lorry hire. Professional drivers, 24/7 service, islandwide coverage. Book Nano, Mini, Wagon R, Sedan, Luxury cars, KDH vans, AC buses, Dimo Batta. Airport transfers, tours, corporate transport. Serving Colombo, Kandy, Galle, Nuwara Eliya & all Sri Lanka.',
   keywords: 'rent a car Sri Lanka, car rental Sri Lanka, vehicle hire Sri Lanka, car hire Sri Lanka, van hire Sri Lanka, bus hire Sri Lanka, lorry hire Sri Lanka, self drive car rental Sri Lanka, car rental Colombo, car rental Kandy, car rental Galle, car rental Negombo, car rental Nuwara Eliya, cheap car rental Sri Lanka, affordable car hire Sri Lanka, luxury car rental Sri Lanka, airport car rental Sri Lanka, Colombo airport car rental, Katunayake airport taxi, Bandaranaike airport car rental, airport pickup Sri Lanka, vehicle with driver Sri Lanka, chauffeur service Sri Lanka, private transport Sri Lanka, group transport Sri Lanka, corporate transport Sri Lanka, wedding car hire Sri Lanka, tour transport Sri Lanka, Sri Lanka transport service, islandwide transport Sri Lanka, intercity transport Sri Lanka, Nano car hire Sri Lanka, Mini car hire Sri Lanka, Wagon R hire Sri Lanka, Sedan car hire Sri Lanka, Luxury car hire Sri Lanka, Mini van hire Sri Lanka, AC van hire Sri Lanka, KDH van hire Sri Lanka, Hiace van hire Sri Lanka, bus rental Sri Lanka, coach hire Sri Lanka, Dimo Batta hire Sri Lanka, box lorry hire Sri Lanka, pickup rental Sri Lanka, cargo transport Sri Lanka, moving truck Sri Lanka, 4x4 rental Sri Lanka, SUV rental Sri Lanka, Yakkala car hire, Gampaha car hire, Negombo car hire, Colombo car hire, Kandy car hire, Galle car hire, Nuwara Eliya car hire, Ella car hire, Sigiriya car hire, Sri Lanka travel, Sri Lanka tours, Sri Lanka transport, car rental rates Sri Lanka, vehicle booking Sri Lanka, online car rental Sri Lanka, instant car rental Sri Lanka, same day car rental Sri Lanka, weekend car rental Sri Lanka, monthly car rental Sri Lanka, long term car rental Sri Lanka',
   canonical: 'https://www.cnstravels.com/',
-  ogTitle: 'CNS Travels | #1 Car Rental & Vehicle Hire Sri Lanka | Professional Drivers',
-  ogDescription: 'Sri Lanka\'s leading vehicle hire service! Affordable car rental, van hire, bus hire & lorry hire. Professional drivers, 24/7 service, islandwide coverage. Book now!',
+  ogTitle: 'CNS Travels | #1 Vehicle Hire Sri Lanka | Professional Drivers',
+  ogDescription: 'Sri Lanka\'s leading vehicle hire service! Affordable car hire, van hire, bus hire & lorry hire. Professional drivers, 24/7 service, islandwide coverage. Book now!',
   ogImage: 'https://www.cnstravels.com/logo.jpeg',
-  twitterTitle: 'CNS Travels | #1 Car Rental & Vehicle Hire Sri Lanka | Professional Drivers',
-  twitterDescription: 'Sri Lanka\'s leading vehicle hire service! Affordable car rental, van hire, bus hire & lorry hire. Professional drivers, 24/7 service, islandwide coverage. Book now!',
+  twitterTitle: 'CNS Travels | #1 Vehicle Hire Sri Lanka | Professional Drivers',
+  twitterDescription: 'Sri Lanka\'s leading vehicle hire service! Affordable car hire, van hire, bus hire & lorry hire. Professional drivers, 24/7 service, islandwide coverage. Book now!',
   twitterImage: 'https://www.cnstravels.com/logo.jpeg'
 };
 
